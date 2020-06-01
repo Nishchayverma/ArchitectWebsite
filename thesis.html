@@ -1,78 +1,553 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Kartik</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+    <title>Kartik</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+    <!-- Animation  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body >
-<header>
-  <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="mainnav">
-    <ul class="navbar-nav ml-auto"   >
-        <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="thesis.html">Thesis</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#freelance.html">Freelance</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Connect</a>
-        </li>
-    </ul>
-</div>
-</nav>
-</header>
 
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav">
+                <i class="material-icons">menu</i>
+            </button>
+            <div class="collapse navbar-collapse" id="mainnav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="thesis.html">Thesis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=" freelance.html">Freelance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Connect</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Carousel -->
+    <div class="position-relative">
+        <div class="fixed">
+            <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5600"
+                data-pause="false">
 
-<div class="contain">
-  
-  <div id="demo" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000" data-pause="false">
-      <!-- Indicators -->
-      <ul class="carousel-indicators">
-        <li data-target="#demo" data-slide-to="0" class="active"></li>
-        <li data-target="#demo" data-slide-to="1"></li>
-        <li data-target="#demo" data-slide-to="2"></li>
-      </ul>  
-      <!-- The slideshow -->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-            <figure>
-                <img class="thesis-image" src="images/1064567.png" alt="image">
-               </figure> 
+                <ul class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                </ul>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <figure>
+                            <img class="thesis-image" src="images/thesis/carousel-one.jpg" alt="image"
+                                data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
+                        </figure>
+                    </div>
+                    <div class="carousel-item">
+                        <figure>
+                            <img class="thesis-image" src="images/thesis/carousel-two.jpg" alt="image"
+                                data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
+                        </figure>
+                    </div>
+                    <div class="carousel-item">
+                        <figure>
+                            <img class="thesis-image" src="images/thesis/carousel-three.jpg" alt="image"
+                                data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
+                        </figure>
+                    </div>
+                    <div class="carousel-item">
+                        <figure>
+                            <img class="thesis-image" src="images/thesis/carousel-four.jpg" alt="image"
+                                data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
+                        </figure>
+                    </div>
+                    <div class="carousel-item">
+                        <figure>
+                            <img class="thesis-image" src="images/thesis/carousel-five.jpg" alt="image"
+                                data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
+                        </figure>
+                    </div>
+                    <div class="carousel-item">
+                        <figure>
+                            <img class="thesis-image" src="images/thesis/zone-two-five-carousel-six.jpg" alt="image"
+                                data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="display-4 carousel-text">Market as public place</div>
         </div>
-        <div class="carousel-item">
-            <figure>
-                <img class="thesis-image" src="images/700175.png" alt="image">
-               </figure> 
-        </div>
-        <div class="carousel-item">
-            <figure>
-                <img class="thesis-image" src="images/751214.jpg" alt="image">
-               </figure> 
-        </div>
-      </div> 
     </div>
-</div>
 
-   
+
+
+
+    <!-- Thesis Content -->
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-12 text-center">
+                <h1 class="content-heading">Market as public place</h1>
+            </div>
+            <div class="col-12">
+                <hr class="line">
+            </div>
+            <div class="col-6 removed-padding">
+                <img src="images/thesis/carousel-one.jpg" alt="Blender-images" class=" mt-4 content-images"
+                data-toggle="modal" data-target="#modals1">
+            </div>
+            <div class="col-6 removed-padding">
+                <img src="images/thesis/carousel-two.jpg" alt="Blender-images" class=" mt-4 content-images"
+                data-toggle="modal" data-target="#modals2">
+            </div>
+            <div class="col-6 removed-padding">
+                <img src="images/thesis/carousel-four.jpg" alt="Blender-images" class=" mb-4 mt-4 content-images"
+                data-toggle="modal" data-target="#modals3">
+            </div>
+            <div class="col-6 removed-padding">
+                <img src="images/thesis/carousel-five.jpg" alt="Blender-images" class=" mb-4 mt-4 content-images"
+                data-toggle="modal" data-target="#modals4">
+            </div>
+            <div class="col-md-6">
+                <p>Effective space use and accessibility in urban markets is a key element in their success
+                    as it directly or indirectly influences the functionality of operation therein. Indra market has
+                    continued to experience space use conflict with incidences of people operating in areas not
+                    specified
+                    and un-organised usage, especially on market paths. This project wishes to address the problem of
+                    space
+                    use to ensure effective functionality of the market,
+                    it intends to devise a model of solving conflict in space use by exploring design and circulation.
+                </p>
+                <p>
+                    Well-designed spaces accrue many benefits such as security,
+                    higher economic returns, better legibility and reduced congestion hence better market functionality.
+                </p>
+
+            </div>
+            <div class="col-md-6">
+                <p>
+                    The project made use of both primary and secondary data. It employed use of questionnaires, mapping,
+                    photography, observation and conduction of literature review as methods of data collection. The data
+                    was analysed by use of Google earth, AutoCAD and MS Excel software after
+                    which it was presented in different forms including tables, maps, photos and descriptions.
+                </p>
+                <p>
+                    The project outlines possibilities that can be taken to address the problem, from this,
+                    the best alternative is chosen depending on the pros and cons of each alternative as weighed
+                    against the desired goals, proposals detailing the best alternative are eventually made.
+                    The project concludes with an implementation framework of the proposed market improvement
+                    programmes.
+                </p>
+            </div>
+            <div class="col-12 position-relative">
+                <span class="content-image-text">Plan</span>
+                <img src="images/thesis/all-zones.jpg" alt="Plan" class="mt-4 content-images"
+                data-toggle="modal" data-target="#modals5">
+            </div>
+            <div class="col-6 col-md-3 mt-4 text-center removed-padding">
+                <span id="text-content-change">Built Infrastructure</span>
+                <img src="images/thesis/plan-one-two.jpg" alt="Built Infrastructure" class=" content-images"
+                data-toggle="modal" data-target="#modals6">
+            </div>
+            <div class="col-6 col-md-3 mt-4 text-center removed-padding">
+                <span id="text-content-change">Preferred Movement</span>
+                <img src="images/thesis/plan-one-three.jpg" alt="Preferred Movement" class=" content-images"
+                data-toggle="modal" data-target="#modals7">
+            </div>
+            <div class="col-6 col-md-3 mt-4 text-center removed-padding">
+                <span id="text-content-change">Green Spaces</span>
+                <img src="images/thesis/plan-one-four.jpg" alt="Green Spaces" class="content-images"
+                data-toggle="modal" data-target="#modals8">
+            </div>
+            <div class="col-6 col-md-3 mt-4 text-center removed-padding">
+                <span id="text-content-change">Built Unbuilt</span>
+                <img src="images/thesis/plan-one-five.jpg" alt="Built Unbuilt" class=" content-images"
+                data-toggle="modal" data-target="#modals9">
+            </div>
+            <div class="col-12">
+                <img src="images/thesis/plan-two.jpg" alt="MDDA Complex" class="mt-4 content-images"
+                data-toggle="modal" data-target="#modals10">
+            </div>
+           
+                <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000" >
+                    <p class="zone mt-4 mb-2  "><b>Zones</b></p>
+                   
+                </div>
+                <div class="col-12 mb-4 text-center" data-aos="fade-up"data-aos-duration="1000" >
+                    <hr class="zone-line">
+                </div>
+               <div class="col-12 text-center">
+                <p id="zone-inner-text">The site is divided into three zones.</p>
+               </div>
+          
+            
+            <div class="col-12">
+                <img src="images/thesis/all-zones.jpg" alt="All-Zones" class="mt-2 mb-4 content-images"
+                data-toggle="modal" data-target="#modals11">
+            </div>
+            <div class="col-12 col-md-6  mt-4 ">
+                <span class="zone-heading "><b>zone 1</b></span>
+                <p class="zone-text">Acts as magnets to crowds and attracts mainly crowd passing on rajpur road.<br>
+                    Elements- Kiosks, temporary shops, flooring pattern, grand opening to plaza.
+                </p>
+
+            </div>
+            <div class="col-12 col-md-6 removed-padding">
+                <img src="images/thesis/plan-zone-one.jpg" alt="Zone-One" class="mt-4 mb-2  content-images"
+                data-toggle="modal" data-target="#modals12">
+            </div>
+            <div class="col-6 col-md-3 removed-padding">
+                <img src="images/thesis/zone-one-one.jpg" alt="Zone-One" class=" mb-4 content-images"
+                data-toggle="modal" data-target="#modals13">
+            </div>
+            <div class="col-6 col-md-3 removed-padding">
+                <img src="images/thesis/zone-one-two.jpg" alt="Zone-One" class=" mb-4 content-images"
+                data-toggle="modal" data-target="#modals14">
+            </div>
+            <div class="col-6 col-md-3 removed-padding">
+                <img src="images/thesis/zone-one-three.jpg" alt="Zone-One" class=" mb-4 content-images"
+                data-toggle="modal" data-target="#modals15">
+            </div>
+            <div class="col-6 col-md-3 removed-padding">
+                <img src="images/thesis/zone-one-four.jpg" alt="Zone-One" class=" mb-4 content-images"
+                data-toggle="modal" data-target="#modals16">
+            </div>
+            <div class="col-12 col-md-6 mt-4 ">
+              <span class="zone-heading "><b>zone 2</b></span>
+              <p class="zone-text">Provides plaza which can be adapted to different use like for events, functions
+                  , flea market.<br>
+                  Play area offers children a safe and recreational place.<br>
+                  Elements - stage, play area, lawn, kiosks, seatings.
+              </p>
+
+          </div>
+            <div class="col-12 col-md-6 removed-padding">
+                <img src="images/thesis/zone-two-five-carousel-six.jpg" alt="Zone-Two" class="mt-4 mb-2 content-images"
+                data-toggle="modal" data-target="#modals17">
+            </div>
+            
+            <div class="col-6 col-md-3 removed-padding">
+                <img src="images/thesis/zone-two-one.jpg" alt="Zone-Two" class=" mb-4 content-images"
+                data-toggle="modal" data-target="#modals18">
+            </div>
+            <div class="col-6 col-md-3 removed-padding">
+                <img src="images/thesis/zone-two-two.jpg" alt="Zone-Two" class=" mb-4 content-images"
+                data-toggle="modal" data-target="#modals19">
+            </div>
+            <div class="col-6 col-md-3 removed-padding">
+                <img src="images/thesis/zone-two-three.jpg" alt="Zone-Two" class=" mb-4 content-images"
+                data-toggle="modal" data-target="#modals20">
+            </div>
+            <div class="col-6 col-md-3 removed-padding">
+                <img src="images/thesis/zone-two-four.jpg" alt="Zone-Two" class=" mb-4 content-images"
+                data-toggle="modal" data-target="#modals21">
+            </div>
+            <div class="col-12 col-md-6 mt-4">
+                <span class="zone-heading"><b>zone 3</b></span>
+                <p class="zone-text">It is a multi functional area which provides an elevated stage.<br>
+                    It can be used as a private activity area for shopkeepers and be functioned as an event place, local
+                    function, celebration and as a spill area.<br>
+                    Food court act as magnet.<br>Elements- Stage, Lawn, Food Court.
+                </p>
+            </div>
+            <div class="col-12 col-md-6 removed-padding">
+                <img src="images/thesis/zone-three-one.jpg" alt="Zone-Three" class="mt-4 mb-2 content-images"
+                data-toggle="modal" data-target="#modals22">
+            </div>
+            <div class="col-4 removed-padding">
+                <img src="images/thesis/zone-three-four.jpg" alt="Zone-Three" class=" mb-2 content-images"
+                data-toggle="modal" data-target="#modals23">
+            </div>
+            <div class="col-4 removed-padding">
+                <img src="images/thesis/zone-three-two.jpg" alt="Zone-Three" class=" mb-2 content-images"
+                data-toggle="modal" data-target="#modals24">
+            </div>
+            <div class="col-4 removed-padding">
+                <img src="images/thesis/zone-three-three.jpg" alt="Zone-Three" class=" mb-2 content-images"
+                data-toggle="modal" data-target="#modals25">
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Thesis-Gallery -->
  
-  
-<script src="scripts.js"></script>
+
+    <!-- Modals -->
+    <div class="modal" id="modals1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/carousel-one.jpg" alt="Blender-images" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modals2">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/carousel-two.jpg" alt="Blender-images" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modals3">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/carousel-four.jpg" alt="Blender-images" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modals4">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/carousel-five.jpg" alt="Blender-images" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modals5">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/all-zones.jpg" alt="Plan" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modals6">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/plan-one-two.jpg" alt="Built Infrastructure" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modals7">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/plan-one-three.jpg" alt="Preferred Movement" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modals8">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/plan-one-four.jpg" alt="Green Spaces" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modals9">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/plan-one-five.jpg" alt="Built Unbuilt" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modals10">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/plan-two.jpg" alt="MDDA Complex" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modals11">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/all-zones.jpg" alt="All-zones" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modals12">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/plan-zone-one.jpg" alt="Zone-one" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+     <div class="modal" id="modals13">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/zone-one-one.jpg" alt="Zone-one" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modals14">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/zone-one-two.jpg" alt="Zone-one" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modals15">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/zone-one-three.jpg" alt="Zone-one" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modals16">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/zone-one-four.jpg" alt="Zone-one" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modals17">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/zone-two-five-carousel-six.jpg" alt="Zone-two" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modals18">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/zone-two-one.jpg" alt="Zone-two" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modals19">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/zone-two-two.jpg" alt="Zone-two" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modals20">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/zone-two-three.jpg" alt="Zone-two" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modals21">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/zone-two-four.jpg" alt="Zone-two" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modals22">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/zone-three-one.jpg" alt="Zone-three" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modals23">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/zone-three-four.jpg" alt="Zone-three" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modals24">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/zone-three-two.jpg" alt="Zone-three" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modals25">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/thesis/zone-three-three.jpg" alt="Zone-three" style="width: 100%;height:auto">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            disable: function () {
+                if (window.innerWidth < 768)
+                    return true;
+                else
+                    return false;
+            }
+        });
+        $(window).resize(function () {
+            AOS.init({
+                disable: function () {
+                    if (window.innerWidth < 768)
+                        return true;
+                    else
+                        return false;
+                }
+            });
+        });
+
+    </script>
 </body>
+
 </html>
