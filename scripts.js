@@ -1,37 +1,13 @@
-const logo=document.querySelectorAll("#logo path");
+// const logo=document.querySelectorAll("#logo path");
 
-for(let i=0; i<logo.length;i++)
-console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
-
-
+// for(let i=0; i<logo.length;i++)
+// console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
 
 
 
 
 // thesis
 
-
- //Scroll Animation
- AOS.init({
-    disable: function () {
-      if (window.innerWidth < 768)
-        return true;
-      else
-        return false;
-    }
-  });
-  $(window).resize(function () {
-    AOS.init({
-      disable: function () {
-        if (window.innerWidth < 768)
-          return true;
-        else
-          return false;
-      }
-    });
-  });
-
-  
   //LightBox
   function openLightBox() {
     document.getElementById("mylightbox").style.display = "block";

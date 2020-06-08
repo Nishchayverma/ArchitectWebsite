@@ -13,13 +13,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
   <!-- Animation  -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <!-- Icon -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="scripts.js"></script>
+  
+  <script>
+    //Scroll Animation
+  AOS.init({
+  disable: function () {
+    if (window.innerWidth < 768)
+      return true;
+    else
+      return false;
+  }
+});
+$(window).resize(function () {
+  AOS.init({
+    disable: function () {
+      if (window.innerWidth < 768)
+        return true;
+      else
+        return false;
+    }
+  });
+});
+  </script>
+  
   <header>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
@@ -765,7 +787,7 @@
       </div>
     </div>
   </div>
-
+  <script src="scripts.js"></script>
 </body>
 
 </html>
