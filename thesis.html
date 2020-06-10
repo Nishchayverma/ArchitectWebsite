@@ -18,13 +18,12 @@
   <!-- Animation  -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link as="script" href="scripts-important.js">
+ 
 </head>
 
 <body>
-  
+  <!-- Navbar -->
   <header>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav">
         <i class="material-icons">menu</i>
@@ -68,19 +67,19 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <figure>
-              <link rel="prefetch" as="image" class="thesis-image" href="images/thesis/high-quality/carousel-one.jpg" alt="image"
+              <img class="thesis-image" src="images/thesis/high-quality/carousel-one.jpg" importance="high" alt="image"
                 data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
             </figure>
           </div>
           <div class="carousel-item">
             <figure>
-              <link rel="prefetch" as="image" class="thesis-image" href="images/thesis/high-quality/carousel-two.jpg" alt="image"
+              <img class="thesis-image" src="images/thesis/high-quality/carousel-two.jpg" importance="high" alt="image"
                 data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
             </figure>
           </div>
           <div class="carousel-item">
             <figure>
-              <link rel="prefetch" as="image" class="thesis-image" href="images/thesis/high-quality/carousel-three.jpg" alt="Blender-image"
+              <img class="thesis-image" src="images/thesis/high-quality/carousel-three.jpg" importance="high" alt="Blender-image"
                 data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
             </figure>
           </div>
@@ -413,8 +412,6 @@
         <img src="images/thesis/low-quality/zone-three-two.jpg" alt="Zone-three" class="content-images"
           onclick="openLightBox();currentSlide(26)">
       </div>
-
-
     </div>
   </div>
 
@@ -507,9 +504,6 @@
 
     </div>
   </div>
-
-
-
 
   <!-- Modals -->
   <div class="modal" id="modals1" >
@@ -766,6 +760,7 @@
     </div>
   </div>
   <script src="scripts.js" defer></script>
+  <script src="scripts-important.js"></script>
 </body>
 
 </html>
