@@ -5,43 +5,18 @@
   <title>Kartik</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="preload" as="script" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <link rel="preload" as="script" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
   <!-- Animation  -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    //Scroll Animation
-  AOS.init({
-  disable: function () {
-    if (window.innerWidth < 768)
-      return true;
-    else
-      return false;
-  }
-});
-$(window).resize(function () {
-  AOS.init({
-    disable: function () {
-      if (window.innerWidth < 768)
-        return true;
-      else
-        return false;
-    }
-  });
-});
-  </script>
-  <!-- Icon -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="preload" as="script" href="https://unpkg.com/aos@next/dist/aos.js">
+  <link rel="preload" as="script" href="scripts-important.js">
 </head>
 
 <body>
-  
-  
   
   <header>
     <!-- Navbar -->
@@ -88,19 +63,19 @@ $(window).resize(function () {
         <div class="carousel-inner">
           <div class="carousel-item active">
             <figure>
-              <img class="thesis-image" src="images/thesis/high-quality/carousel-one.jpg" alt="image"
+              <link rel="preload" as="image" class="thesis-image" href="images/thesis/high-quality/carousel-one.jpg" alt="image"
                 data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
             </figure>
           </div>
           <div class="carousel-item">
             <figure>
-              <img class="thesis-image" src="images/thesis/high-quality/carousel-two.jpg" alt="image"
+              <link rel="preload" as="image" class="thesis-image" href="images/thesis/high-quality/carousel-two.jpg" alt="image"
                 data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
             </figure>
           </div>
           <div class="carousel-item">
             <figure>
-              <img class="thesis-image" src="images/thesis/high-quality/carousel-three.jpg" alt="Blender-image"
+              <link rel="preload" as="image" class="thesis-image" href="images/thesis/high-quality/carousel-three.jpg" alt="Blender-image"
                 data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
             </figure>
           </div>
@@ -785,7 +760,12 @@ $(window).resize(function () {
       </div>
     </div>
   </div>
-  <script src="scripts.js"></script>
+  <script src="scripts.js" defer></script>
 </body>
 
 </html>
+
+<!-- Prioritizing of resources -->
+<!-- Use defer async to lower priority of scripts -->
+<!-- Use preconnect,preload to load resource at begin. -->
+<!-- Use priority hints to increase or decrease priority if above does not have required effect -->
