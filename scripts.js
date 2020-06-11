@@ -38,8 +38,16 @@
 
 
   //Modals
+  function openModal1(){
+    document.getElementById("modal-image1").src="images/thesis/high-quality/carousel-one.jpg";
+    $("#modals1").modal();
+  }
   function closeModal1() {
     $("#modals1").modal("hide");
+  }
+  function openModal2(){
+    document.getElementById("modal-image2").src="images/thesis/high-quality/carousel-two.jpg";
+    $("#modals2").modal();
   }
   function closeModal2() {
     $("#modals2").modal("hide");

@@ -22,7 +22,7 @@
 </head>
 
 <body>
-  <script src="scripts-important.js"></script>
+ 
   <!-- Navbar -->
   <header>
     <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
@@ -118,12 +118,12 @@
         <hr class="line">
       </div>
       <div class="col-6 removed-padding">
-        <img src="images/thesis/low-quality/carousel-one.jpg" alt="Blender-images" class=" mt-4 content-images"
-          data-toggle="modal" data-target="#modals1">
+        <img src="images/thesis/low-quality/carousel-one.jpg" onclick="openModal1()" alt="Blender-images" class=" mt-4 content-images"
+         >
       </div>
       <div class="col-6 removed-padding">
-        <img src="images/thesis/low-quality/carousel-two.jpg" alt="Blender-images" class=" mt-4 content-images"
-          data-toggle="modal" data-target="#modals2">
+        <img src="images/thesis/low-quality/carousel-two.jpg" onclick="openModal2()" alt="Blender-images" class=" mt-4 content-images"
+         >
       </div>
       <div class="col-6 removed-padding">
         <img src="images/thesis/low-quality/carousel-four.jpg" alt="Blender-images" class=" mb-4 mt-4 content-images"
@@ -511,7 +511,7 @@
       <div class="modal-content"">
         <div class="modal-body" >
           <span class="close" onclick="closeModal1()">&times;</span>
-          <img src="images/thesis/high-quality/carousel-one.jpg" alt="Blender-images" style="width: 100%;height:auto">
+          <img id="modal-image1" alt="Blender-images" style="width: 100%;height:auto">
         </div>
       </div>
     </div>
@@ -521,7 +521,7 @@
       <div class="modal-content">
         <div class="modal-body">
           <span class="close" onclick="closeModal2()">&times;</span>
-          <img src="images/thesis/high-quality/carousel-two.jpg" alt="Blender-images" style="width: 100%;height:auto">
+          <img id="modal-image2" alt="Blender-images" style="width: 100%;height:auto">
         </div>
       </div>
     </div>
@@ -760,7 +760,7 @@
     </div>
   </div>
   <script src="scripts.js" defer></script>
-  
+  <script src="scripts-important.js"></script>
 </body>
 </html>
 
