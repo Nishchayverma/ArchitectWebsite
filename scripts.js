@@ -11,6 +11,7 @@
   //LightBox
   function openLightBox() {
     document.getElementById("mylightbox").style.display = "block";
+    document.getElementById("light-image1").src="images/thesis/high-quality/all-zones.jpg";
   }
   function closeLightBox() {
     document.getElementById("mylightbox").style.display = "none";
