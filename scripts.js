@@ -69,7 +69,7 @@
     $("#modals4").modal("hide");
   }
   function openModal5(){
-    document.getElementById("modal-image5").src="images/thesis/high-quality/carousel-five.jpg";
+    document.getElementById("modal-image5").src="images/thesis/high-quality/all-zones.jpg";
     $("#modals5").modal();
   }
   function closeModal5() {
