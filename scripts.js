@@ -36,7 +36,7 @@
     document.getElementById("light-image23").src="images/thesis/high-quality/zone-three-one.jpg";
     document.getElementById("light-image24").src="images/thesis/high-quality/zone-three-four.jpg";
     document.getElementById("light-image25").src="images/thesis/high-quality/zone-three-three.jpg";
-    document.getElementById("light-image26  ").src="images/thesis/high-quality/zone-three-two.jpg";
+    document.getElementById("light-image26").src="images/thesis/high-quality/zone-three-two.jpg";
     
   }
   function closeLightBox() {
