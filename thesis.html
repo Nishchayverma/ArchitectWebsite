@@ -126,12 +126,12 @@
          >
       </div>
       <div class="col-6 removed-padding">
-        <img src="images/thesis/low-quality/carousel-four.jpg" alt="Blender-images" class=" mb-4 mt-4 content-images"
-          data-toggle="modal" data-target="#modals3">
+        <img src="images/thesis/low-quality/carousel-four.jpg" onclick="openModal3()" alt="Blender-images" class=" mb-4 mt-4 content-images"
+          >
       </div>
       <div class="col-6 removed-padding">
-        <img src="images/thesis/low-quality/carousel-five.jpg" alt="Blender-images" class=" mb-4 mt-4 content-images"
-          data-toggle="modal" data-target="#modals4">
+        <img src="images/thesis/low-quality/carousel-five.jpg" onclick="openModal4()" alt="Blender-images" class=" mb-4 mt-4 content-images"
+          >
       </div>
       <div >
         <p class="zone mt-4 mb-2  "><b>Introduction</b></p>
@@ -173,8 +173,8 @@
       </div>
       <div class="col-12 position-relative">
         <span class="content-image-text">Site Plan</span>
-        <img src="images/thesis/low-quality/all-zones.jpg" alt="Plan" class="mt-4 content-images" data-toggle="modal"
-          data-target="#modals5">
+        <img src="images/thesis/low-quality/all-zones.jpg" onclick="openModal5()" alt="Plan" class="mt-4 content-images" 
+          >
       </div>
       <div class="col-6 col-md-3 mt-4 text-center removed-padding">
         <span id="text-content-change">Built Infrastructure</span>
@@ -531,7 +531,7 @@
       <div class="modal-content">
         <div class="modal-body">
           <span class="close" onclick="closeModal3()">&times;</span>
-          <img src="images/thesis/high-quality/carousel-four.jpg" alt="Blender-images" style="width: 100%;height:auto">
+          <img id="modal-image3" alt="Blender-images" style="width: 100%;height:auto">
         </div>
       </div>
     </div>
@@ -541,7 +541,7 @@
       <div class="modal-content">
         <div class="modal-body">
           <span class="close" onclick="closeModal4()">&times;</span>
-          <img src="images/thesis/high-quality/carousel-five.jpg" alt="Blender-images" style="width: 100%;height:auto">
+          <img id="modal-image4" alt="Blender-images" style="width: 100%;height:auto">
         </div>
       </div>
     </div>
@@ -551,7 +551,7 @@
       <div class="modal-content">
         <div class="modal-body">
           <span class="close" onclick="closeModal5()">&times;</span>
-          <img src="images/thesis/high-quality/all-zones.jpg" alt="Plan" style="width: 100%;height:auto">
+          <img id="modal-image5" alt="Plan" style="width: 100%;height:auto">
         </div>
       </div>
     </div>

@@ -49,14 +49,28 @@
     document.getElementById("modal-image2").src="images/thesis/high-quality/carousel-two.jpg";
     $("#modals2").modal();
   }
+  
   function closeModal2() {
     $("#modals2").modal("hide");
   }
+  function openModal3(){
+    document.getElementById("modal-image3").src="images/thesis/high-quality/carousel-four.jpg";
+    $("#modals3").modal();
+  }
+ 
   function closeModal3() {
     $("#modals3").modal("hide");
   }
+  function openModal4(){
+    document.getElementById("modal-image4").src="images/thesis/high-quality/carousel-five.jpg";
+    $("#modals4").modal();
+  }
   function closeModal4() {
     $("#modals4").modal("hide");
+  }
+  function openModal5(){
+    document.getElementById("modal-image5").src="images/thesis/high-quality/carousel-five.jpg";
+    $("#modals5").modal();
   }
   function closeModal5() {
     $("#modals5").modal("hide");
