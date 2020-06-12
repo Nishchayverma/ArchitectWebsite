@@ -7,7 +7,7 @@
             return false;
         }
       });
-      $(window).resize(function () {
+      $(window).resize(function () {  
         AOS.init({
           disable: function () {
             if (window.innerWidth < 768)
@@ -17,4 +17,11 @@
           }
         });
       });
+
+      document.querySelectorAll('img')
+    .forEach((img) =>
+        img.addEventListener('load', () =>
+            AOS.refresh()
+        )
+    );
       
