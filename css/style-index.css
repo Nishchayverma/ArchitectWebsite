@@ -1,0 +1,202 @@
+body,html{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+/* navbar */
+
+.navbar:hover{
+background-color: rgb(0,0,0,0.7)!important;
+}
+.navbar{
+  z-index: 1;
+  background-color: rgb(0,0,0,0.0)!important;
+  transition-property: background;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.04, 0.4, 0.58, 1);
+}
+
+.navbar-toggler{
+  background-color: rgb(0,0,0,0.8)!important;
+}
+ .material-icons{
+  color: #C0C0C0;
+}
+.navbar-nav .nav-link{
+  padding-right:  20px!important;
+  text-shadow: 1px 1px 1px black;
+  font-size: 20px;
+  color: white!important;
+}
+.navbar-nav .nav-link:hover{
+  animation: border-display 0.5s forwards ease-out;
+  border-bottom: 2px solid 	#C0C0C0;
+  width: 0%;
+}
+@keyframes border-display{
+  to{
+    width: 100%;
+    border-bottom: 2px solid 	#C0C0C0;
+  }
+}
+.nav-item.active .nav-link{
+  
+  width: 100%;
+  color: 	#A9A9A9!important;
+  text-shadow: 1px 1px 1px black;
+
+}
+
+
+
+
+
+/* Index.html */
+
+/* heading */
+.hero-image{
+    height: 800px;
+    background-image: url(images/thesis/all-zones.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+    /* Effect to load after blank screen below*/
+    /* animation: dark-image-load 2.5s forwards linear ; */
+    /* Effect to load with a decreasing brightness with pop out effect below */
+    animation: dark-image-load 1s 2.5s forwards linear ;
+   }
+   #logo{
+   
+     text-align: center;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%); 
+   }
+   #logo path:nth-child(1){
+    stroke-dasharray:  512.3522338867188px;
+    stroke-dashoffset:  512.3522338867188px;
+    animation: line-anime 0.5s ease forwards;
+   }
+   #logo path:nth-child(2){
+     stroke-dashoffset: 490.29205322265625px;
+     stroke-dasharray: 490.29205322265625px;
+     animation: line-anime 0.5s ease forwards 0.2s;
+   }#logo path:nth-child(3){
+     stroke-dashoffset: 549.0668334960938px;
+     stroke-dasharray: 549.0668334960938px;
+     animation: line-anime 0.5s ease forwards 0.4s;
+   }#logo path:nth-child(4){
+     stroke-dashoffset: 336.6719665527344px;
+     stroke-dasharray: 336.6719665527344px;
+     animation: line-anime 0.5s ease forwards 0.6s;
+   }#logo path:nth-child(5){
+     stroke-dashoffset: 226.9440155029297px;
+     stroke-dasharray: 226.9440155029297px;
+     animation: line-anime 0.5s ease forwards 0.8s;
+   }#logo path:nth-child(6){
+     stroke-dashoffset: 512.3509521484375px;
+     stroke-dasharray: 512.3509521484375px;
+     animation: line-anime 0.5s ease forwards 1s;
+   }#logo path:nth-child(7){
+     stroke-dashoffset: 441.6843566894531px;
+     stroke-dasharray: 441.6843566894531px;
+     animation: line-anime 0.5s ease forwards 1.2s;
+   }#logo path:nth-child(8){
+     stroke-dashoffset: 463.96795654296875px;
+     stroke-dasharray: 463.96795654296875px;
+     animation: line-anime 0.5s ease forwards 1.4s;
+   }#logo path:nth-child(9){
+     stroke-dashoffset: 549.0673217773438px;
+     stroke-dasharray: 549.0673217773438px;
+     animation: line-anime 0.5s ease forwards 1.6s;
+   }#logo path:nth-child(10){
+     stroke-dashoffset: 754.9266357421875px;
+     stroke-dasharray: 754.9266357421875px;
+     animation: line-anime 0.5s ease forwards 1.8s;
+   }#logo path:nth-child(11){
+     stroke-dashoffset: 490.2921447753906px;
+     stroke-dasharray: 490.2921447753906px;
+     animation: line-anime 0.5s ease forwards 2s;
+   }
+   
+   .hero-text {
+     text-transform: uppercase;
+     width: 100%;
+     font-family: 'Londrina Shadow', cursive;
+     text-align: center;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: white;
+     transition: 5s;
+     font-size: 150px;
+     letter-spacing: 3px;
+     animation: text-fly 1s 1s forwards linear;
+   }
+   
+   @keyframes text-fly{
+     0%{
+       font-size: 150px;
+       transform: translate(-50%,-50%);
+     }
+     25%{
+       font-size: 125px;
+       transform: translate(-60%,40%);
+     }
+     50%{
+       font-size: 100px;
+       transform: translate(-70%,130%);
+     }
+    75%{
+      font-size: 75px;
+      transform: translate(-80%,220%);
+    }
+     100%{
+       font-size: 50px;
+       transform: translate(-90%,310%);
+     } 
+   }
+   
+   @keyframes line-anime{
+     to{
+       stroke-dashoffset: 0px;
+     }
+   }
+   
+   /* @keyframes dark-image-load{
+     0%{
+       filter: brightness(0%);
+     }
+     50%{
+       filter: brightness(0%);
+     }
+     75%{
+       filter:brightness(50%);
+     }
+     85%{
+      filter: brightness(70%);
+     }
+     100%{
+       filter:brightness(100%);
+     }
+   } */
+   
+   
+   @keyframes dark-image-load{
+     0%{
+       filter: brightness(100%);
+     }
+     50%{
+       filter: brightness(85%);
+       transform: scale(1.03);
+     }
+     100%{
+       filter:brightness(70%);
+       transform: scale(1.06);
+     }
+   }
+   
