@@ -59,7 +59,6 @@ background-color: rgb(0,0,0,0.7)!important;
  animation: closing-screen 0.5s 1s forwards ease-in-out ;
 }
 .opening-text{
-  font-family: 'Fredericka the Great', cursive;
   position: absolute;
   top: 50%;
   left: 50%;
