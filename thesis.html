@@ -8,12 +8,6 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
   integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
-  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
-  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <!-- Google icon -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <!-- css -->
@@ -38,11 +32,8 @@
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="thesis.html">Thesis</a>
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href=" projects.html">Projects</a>
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Connect</a>
@@ -106,18 +97,36 @@
           </div>
         </div>
       </div>
-      <div class="display-4 carousel-text">Market as public place</div>
+      <div class="carousel-text">
+        <h1>market as public place</h1>
+        <p>Dehradun, Uttrakhand</span>
+        <p>2018-2019</span>
+      </div>
     </div>
   </div>
 </section>
+<div class="back-to-top" onclick="scrollToTop();" data-toggle="tooltip" data-placement="top" title="Back to top">
+  <i class="material-icons">keyboard_arrow_up</i>
+  <i class="material-icons">keyboard_arrow_up</i>
+  <i class="material-icons">keyboard_arrow_up</i>
+</div>
   <!-- Thesis Content -->
   <section>
   <div class="container-fluid">
     <div class="row content">
-      <div class="col-12 text-center">
-        <h1 class="content-heading">Market as public place</h1>
-      </div>
-      <div class="col-12">
+      <div class="col-12 ">
+        <h1 class="content-heading"><b>market as public place</b></h1>
+         <!-- For better styles sub-heading, uncomment this -->
+        <!-- <div class="row">
+          <div class="col-md-6">
+            <p id="content-subheading">Dehradun, Uttrakhand</p>
+          </div>
+        <div class="col-md-6">
+          <p id="content-subheading">2018-2019</p>
+        </div>
+        </div> -->
+        <p>Dehradun, Uttrakhand</p>
+        <p>2018-2019</p>
         <hr class="line">
       </div>
       <div class="col-6 removed-padding">
@@ -215,7 +224,7 @@
       </div>
       <div class="col-12 col-md-6  mt-4 ">
         <span class="zone-heading "><b>zone 1</b></span>
-        <p class="zone-text">Acts as magnets to crowds and attracts mainly crowd passing on rajpur road.<br>
+        <p >Acts as magnets to crowds and attracts mainly crowd passing on rajpur road.<br>
           Elements- Kiosks, temporary shops, flooring pattern, grand opening to plaza.
         </p>
 
@@ -242,7 +251,7 @@
       </div>
       <div class="col-12 col-md-6 mt-4 ">
         <span class="zone-heading "><b>zone 2</b></span>
-        <p class="zone-text">Provides plaza which can be adapted to different use like for events, functions
+        <p >Provides plaza which can be adapted to different use like for events, functions
           , flea market.<br>
           Play area offers children a safe and recreational place.<br>
           Elements - stage, play area, lawn, kiosks, seatings.
@@ -271,7 +280,7 @@
       </div>
       <div class="col-12 col-md-6 mt-4">
         <span class="zone-heading"><b>zone 3</b></span>
-        <p class="zone-text">It is a multi functional area which provides an elevated stage.<br>
+        <p >It is a multi functional area which provides an elevated stage.<br>
           It can be used as a private activity area for shopkeepers and be functioned as an event place, local
           function, celebration and as a spill area.<br>
           Food court act as magnet.<br>Elements- Stage, Lawn, Food Court.
@@ -405,6 +414,11 @@
       <div class="col-4 col-md-3 mb-1 removed-more-padding">
         <img data-src="images/thesis/low-quality/zone-three-two.jpg"  width="750" height="500" class="lazyload content-images"  alt="Zone-three" 
           onclick="openLightBox();currentSlide(26)">
+      </div>
+      <div class="col-12 text-center  copyright ">
+        <p>Credits - MDDA Dehradun</p>
+        <p>Copyright&copy;Kartik Verma</p>
+        <p>All rights reserved</p>
       </div>
     </div>
   </div>
@@ -755,9 +769,13 @@
 
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="scripts-important.js"></script>
-  <script src="lazysizes.min.js" async></script>
-  <script src="scripts.js" defer></script>
+  <script src="js/scripts-important.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="js/lazysizes.min.js" async></script>
+  <script src="js/scripts-thesis.js" defer></script>
  
 </body>
 </html>

@@ -24,7 +24,7 @@ background-color: rgb(0,0,0,0.7)!important;
 .navbar-nav .nav-link{
   padding-right:  20px!important;
   text-shadow: 1px 1px 1px black;
-  font-size: 20px;
+  font-size: 16px;
   color: white!important;
 }
 .navbar-nav .nav-link:hover{
@@ -63,10 +63,8 @@ background-color: rgb(0,0,0,0.7)!important;
 }
 
 .carousel-indicators{
-  position: absolute;
-  left: 55%;
-  bottom: 10px;
-  width: 50%;
+  margin-bottom: 2%;
+
 }
 .carousel-indicators li{
   box-shadow: 0px 0px 3px 1px #202020;
@@ -111,21 +109,32 @@ figure{
     transform: scale(1.1);
   }
   }
-.carousel-text{
+  .carousel-text{
     position: absolute;
-    bottom: 8%;
-    left: 2%;
+    bottom: 0;
+    left: 0;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  .carousel-text  h1{
+    text-transform: uppercase;
     text-shadow: 1px 1px 3px black;
-    text-transform: uppercase;     
-    margin-left: 20px;
+    font-weight: 100;
+    font-size: 60px;
+    line-height: 1.1;
     color: white;
   }
-
+  .carousel-text  p{
+    line-height: 0.5;
+    font-size: 15px;
+    text-shadow: 1px 1px 3px black;
+    color:	white;
+  }
 /* Thesis Content */
 
 .content{
  z-index: 2;
-  background-color: #F8F8F8;
+  background-color: white;
   width: 70%;
   margin: 0 auto;
   position: absolute;
@@ -134,23 +143,39 @@ figure{
   padding: 30px;
 }
 .content-heading{
-  font-size:55px;
+  font-weight: 300;
+  font-size:60px;
   text-transform: uppercase;
   color: #303030;
 }
+.content-heading ~ p{
+  line-height: 0.3;
+  color:#808080;
+}
+
+/* CSS for Better styled sub-heading */
+/* .content-heading ~ .row{
+text-align: center;
+} */
+/* #content-subheading {
+  width: 80%;
+  margin-left: 10%;
+  padding: 2px 4px 2px 4px;
+  border-radius: 8px;
+  background: linear-gradient(145deg,	#F5F5F5, #ffffff);
+  box-shadow:  3px 3px 6px#E8E8E8;
+} */
+
 .line{
   border-top: 2px solid 	#808080;
 }
 .content-images{
   width: 100%;
   height: auto;
-  cursor: pointer;
+  cursor: zoom-in;
+  transition: opacity 0.5s ease ,
+               box-shadow 0.5s ease  ;
 }
-.content-images:hover{
-  box-shadow: 0px 0px 5px 1px black;
-  transition: box-shadow 0.5s ease ;
-}
-
 .content-image-text{  
   position: absolute;
   bottom: 4%;
@@ -158,9 +183,16 @@ figure{
   font-size: 18px;
   text-transform: uppercase;
 }
+.content-images:hover{
+  opacity: 0.8;
+  box-shadow: 0px 0px 5px 1px black;
+}
+
 .zone{
   color: #303030;
   font-size: 40px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 .zone-line{
   width: 40%;
@@ -168,18 +200,15 @@ figure{
   border-top: 2px solid 	#808080;
 }
 .zone-heading{
-  color: #303030;
   text-transform: uppercase;
+  color: #303030;
   font-size: 22px;
 }
 #zone-inner-text{
   color:#808080;
   font-size: 20px;
 }
-.zone-text{
-  text-transform: uppercase;
-  font-size: 17px;
-}
+
 
 [data-aos="darkness"]{
   filter: brightness(100%);
@@ -195,11 +224,65 @@ figure{
   padding-right: 2px;
 }
 
+
+.back-to-top{
+  z-index: 3;
+  position: fixed;
+  bottom: 3%;
+  right: 5%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+
+background: linear-gradient(47deg, rgba(0,0,5,1) 31%, rgba(0,0,51,1) 61%, rgba(0,0,102,1) 100%);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ;
+}
+.back-to-top.active{
+  
+ visibility: visible;
+ opacity: 1;
+}
+.back-to-top .material-icons{
+  color: white;
+  font-size: 50px;
+}
+.back-to-top .material-icons:nth-child(1){
+ position: absolute;
+ top: -8px;
+ left: 10px;
+ font-size: 30px;
+ opacity: 0;
+}
+.back-to-top .material-icons:nth-child(2){
+ position: absolute;
+ top: -5px;
+ left: 5px;
+ font-size: 40px;
+ opacity: 0;
+}
+.back-to-top:hover .material-icons:nth-child(1){
+ animation: move-up 0.7s 0.3s infinite  linear;
+}
+.back-to-top:hover .material-icons:nth-child(2){
+  animation: move-up 0.7s infinite linear;
+ }
+@keyframes move-up{
+ 0%{
+   opacity: 0;
+ }
+ 100%{
+   opacity: 1;
+ }
+}
+
 /* LightBox */
 .lightbox {
   display: none;
   position: fixed;
-  z-index: 3;
+  z-index: 4;
   padding-top: 50px;
   left: 0;
   top: 0;
@@ -209,7 +292,7 @@ figure{
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-/* LightBox Content */
+/* LightBox Content */  
 .lightbox-content {
   position: relative;
   background-color: #fefefe;
@@ -326,23 +409,24 @@ figure{
  .modal-body{
   padding: 5px;
 } 
+.copyright{
+  margin-top: 40px;
+}
+.copyright  p{
+ color: #808080;
+  font-size: 13px;
+  line-height: 0.1;
+}
 
 
 @media only screen and (max-width:1000px) and (min-width:767px){
  
   .navbar-nav .nav-link{
     padding-right:  10px!important;
-    font-size: 15px;
+    font-size: 14px;
   }
   .thesis-image{
     min-height: 100vh;
-  }
-  .carousel-text{
-    font-size: 40px;
-  }
-  .carousel-indicators{
-    left: 53%;
-    bottom: 5px;
   }
   .carousel-indicators li{
     width: 8px;
@@ -353,19 +437,16 @@ figure{
     width: 10px;
     height: 10px; 
   }
+ 
   .content-image-text{
     left: 80%;
     font-size: 16px;
   }
-  .zone{
+    .zone{
     font-size: 30px;
   }
   .zone-heading{
     font-size: 19px;
-  }
-  .zone-text{
-    font-size: 15px;
-    text-transform: none;
   }
   /* lightbox */
   .lightbox {
@@ -381,6 +462,7 @@ figure{
     font-size: 50px;
   }
 
+
 }
 
 @media only screen and (max-width:768px){
@@ -389,7 +471,7 @@ figure{
   .navbar-nav .nav-link{
     padding-left: 15px;
     padding-top: 5px;
-    font-size: 20px;
+    font-size: 14px;
   }
   button.navbar-toggler{
    margin-left: 10px!important;
@@ -406,8 +488,7 @@ figure{
 }
 
   .carousel-indicators{
-    left: 50%;
-    bottom: 5px;
+  margin-bottom: 3%;
   }
   .carousel-indicators li{
     width: 8px;
@@ -433,12 +514,24 @@ figure{
   }
   .content-heading{
     font-size:45px;
+    text-align: left;
   }
+  /* .content-heading ~ .row{
+    text-align: left;
+  } */
+  /* #content-subheading {
+    width: 100%;
+    margin-left: 0%;
+    padding: 0px;
+    border-radius: 0px;
+    background: none;
+    box-shadow:  none;
+    line-height: 0.5;
+  } */
   .content-image-text{
     left: 85%;
     font-size: 16px;
   }
-
   .zone{
     font-size: 25px;
   }
@@ -446,12 +539,7 @@ figure{
     font-size: 18px;
 
   }
-  
-  .zone-text{
-    font-size: 13px;
-    text-transform: none;
-  }
- 
+
   .removed-padding{
   padding-right: 5px;
   padding-left: 5px;
@@ -481,16 +569,36 @@ figure{
     top: 130px;
     right: 20px;
   }
+  .back-to-top{
+    bottom: 3%;
+    right: 1%;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+  }
+  .back-to-top .material-icons{
+    font-size: 40px;
+  }
+  .back-to-top:hover .material-icons:nth-child(1){
+    animation: none;
+   }
+   .back-to-top:hover .material-icons:nth-child(2){
+     animation: none;
+    }
+  
+ 
   
 }
 @media only screen and (max-width:576px){
+  p{
+    font-size: 13px;
+  }
   .content-image-text{
     left: 75%;
     font-size: 10px;
-  }
-  .carousel-indicators{
-    left: 45%;
-    bottom: 3px;
+  } 
+   .carousel-indicators{
+    margin-bottom: 5%;
   }
   .carousel-indicators li{
     width: 6px;
@@ -508,14 +616,19 @@ figure{
   .navbar-nav .nav-link{
     padding-left: 7px;
     padding-top: 4px;
-    font-size: 15px;
+    font-size: 14px;
   }
   button.navbar-toggler{
     margin-left: 0px!important;
   }
   .content-heading{
     font-size:30px;
+    line-height: 1.2;
   }
+  /* #content-subheading {
+    font-size: 13px;
+    line-height: 0.3;
+  } */
   #text-content-change{
     font-size: 10px;
   }
@@ -533,6 +646,10 @@ figure{
     padding: 8px;
     margin-top: -30px;
     font-size: 30px;
+  }
+  .copyright  p{
+    font-size: 10px;
+    line-height: 0.0;
   }
 }
 
