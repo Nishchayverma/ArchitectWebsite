@@ -8,8 +8,7 @@ body,html{
 .navbar:hover{
 background-color: rgb(0,0,0,0.7)!important;
 }
-.navbar{
-  z-index: 1;
+.navbar{        
   background-color: rgb(0,0,0,0.0)!important;
   transition-property: background;
   transition-duration: 0.6s;
@@ -45,21 +44,6 @@ background-color: rgb(0,0,0,0.7)!important;
   text-shadow: 1px 1px 1px black;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

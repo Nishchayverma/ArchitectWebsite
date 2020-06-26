@@ -16,7 +16,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
+<body >
 
   <!-- Navbar -->
   <header>
@@ -61,38 +61,44 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <figure>
-                <img class="thesis-image" src="images/residence/high-quality/carousel-one.jpg" width="2880" height="1620" alt="carousel-image"
-                  data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
+                <img class="thesis-image removeAos" src="images/residence/high-quality/carousel-one.jpg" width="2880"
+                  height="1620" alt="carousel-image" data-aos="darkness" data-aos-anchor=".content"
+                  data-aos-duration="1000">
               </figure>
             </div>
             <div class="carousel-item">
               <figure>
-                <img class="thesis-image" src="images/residence/high-quality/carousel-two.jpg" width="2880" height="1620" alt="carousel-image"
-                  data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
+                <img class="thesis-image removeAos " src="images/residence/high-quality/carousel-two.jpg" width="2880"
+                  height="1620" alt="carousel-image" data-aos="darkness" data-aos-anchor=".content"
+                  data-aos-duration="1000">
               </figure>
             </div>
             <div class="carousel-item">
               <figure>
-                <img class="thesis-image" src="images/residence/high-quality/carousel-three.jpg" width="2880" height="1620"
-                  alt="carousel-image" data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
+                <img class="thesis-image removeAos" src="images/residence/high-quality/carousel-three.jpg" width="2880"
+                  height="1620" alt="carousel-image" data-aos="darkness" data-aos-anchor=".content"
+                  data-aos-duration="1000">
               </figure>
             </div>
             <div class="carousel-item">
               <figure>
-                <img class="thesis-image" src="images/residence/high-quality/carousel-four.jpg" width="2880" height="1620"
-                  alt="carousel-image" data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
+                <img class="thesis-image removeAos" src="images/residence/high-quality/carousel-four.jpg" width="2880"
+                  height="1620" alt="carousel-image" data-aos="darkness" data-aos-anchor=".content"
+                  data-aos-duration="1000">
               </figure>
             </div>
             <div class="carousel-item">
               <figure>
-                <img class="thesis-image" src="images/residence/high-quality/carousel-five.jpg" width="2880" height="1620"
-                  alt="carousel-image" data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
+                <img class="thesis-image removeAos" src="images/residence/high-quality/carousel-five.jpg" width="2880"
+                  height="1620" alt="carousel-image" data-aos="darkness" data-aos-anchor=".content"
+                  data-aos-duration="1000">
               </figure>
             </div>
             <div class="carousel-item">
               <figure>
-                <img class="thesis-image" src="images/residence/high-quality/carousel-six.jpg" width="2880" height="1620"
-                  alt="Carousel-image" data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
+                <img class="thesis-image removeAos" src="images/residence/high-quality/carousel-six.jpg" width="2880"
+                  height="1620" alt="Carousel-image" data-aos="darkness" data-aos-anchor=".content"
+                  data-aos-duration="1000">
               </figure>
             </div>
           </div>
@@ -102,13 +108,17 @@
           <p>Dehradun, Uttarakhand</p>
           <p>2017-2019</p>
         </div>
+        <a href="#content-section">
+          <div class="scrolldown">
+            <p>Scroll to explore</p>
+          </div>
+        </a>
       </div>
-    </div>
   </section>
   <!-- Residence content -->
   <section>
     <div class="container-fluid">
-      <div class="row content">
+      <div class="row content" id="content-section">
         <div class="col-12">
           <h1 class="content-heading"><b>Residence</b></h1>
           <!-- For better styles sub-heading, uncomment this -->
@@ -418,17 +428,19 @@
         <div class="col-12 text-center  copyright ">
           <p>Copyright&copy;Kartik Verma</p>
           <p>All rights reserved</p>
-          <p>Credits - Studio 219 (Arch. Magali Rastogi)</p>
+          <p>Credits - Studio 219 (Ar. Magali Rastogi)</p>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="back-to-top" onclick="scrollToTop();" data-toggle="tooltip" data-placement="top" title="Back to top">
-    <i class="material-icons">keyboard_arrow_up</i>
-    <i class="material-icons">keyboard_arrow_up</i>
-    <i class="material-icons">keyboard_arrow_up</i>
-  </div>
+  
+    <div class="back-to-top" onclick="scrollToTop()" data-toggle="tooltip" data-placement="top" title="Back to top">
+      <i class="material-icons">keyboard_arrow_up</i>
+      <i class="material-icons">keyboard_arrow_up</i>
+      <i class="material-icons">keyboard_arrow_up</i>
+    </div>
+  
   <!-- lightBox -->
   <div id="mylightbox" class="lightbox">
     <span class="close-lightbox" onclick="closeLightBox()">&times;</span>
@@ -685,15 +697,15 @@
       </div>
     </div>
   </div>
-
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+  crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/scripts-important.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
   <script src="js/lazysizes.min.js" async></script>
   <script src="js/scripts-residence.js" defer></script>
 </body>

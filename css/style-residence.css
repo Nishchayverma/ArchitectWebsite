@@ -2,6 +2,7 @@ body,html{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 /* navbar */
 
@@ -130,6 +131,28 @@ figure{
     color:	white;
   }
 
+   
+    .scrolldown p{
+      position: absolute;
+      left: 50%;
+      bottom: 5%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 16px;
+      text-shadow: 2px 1px 1px black;
+      opacity: 0;
+      animation: scroll-down 1s 3s linear infinite alternate-reverse;
+    }
+    @keyframes scroll-down{
+      0%{
+        opacity: 0;
+      }
+
+     50%,100%{
+        opacity: 1;
+      }
+    }
+  
   /* Residence content */
 .content{
   z-index: 2;
@@ -494,6 +517,11 @@ background: linear-gradient(47deg, rgba(0,0,5,1) 31%, rgba(0,0,51,1) 61%, rgba(0
   #special-content-image{
     margin-top: 0px;
     float: none;
+  }
+  .scrolldown p{
+    animation: none;
+    display: none;
+    visibility: hidden;
   }
 
   .content{

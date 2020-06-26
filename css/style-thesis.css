@@ -2,6 +2,7 @@ body,html{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 /* navbar */
 
@@ -129,6 +130,26 @@ figure{
     font-size: 15px;
     text-shadow: 1px 1px 3px black;
     color:	white;
+  }
+  .scrolldown{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 16px;
+    text-shadow: 2px 1px 1px black;
+    opacity: 0;
+    animation-duration:  4s;
+  }
+  @keyframes scroll-down{
+    0%{
+      opacity: 1;
+    }
+
+   50%,100%{
+      opacity: 1;
+    }
   }
 /* Thesis Content */
 
@@ -501,6 +522,11 @@ background: linear-gradient(47deg, rgba(0,0,5,1) 31%, rgba(0,0,51,1) 61%, rgba(0
   }
   .carousel-text{
     display: none;
+  }
+  .scrolldown p{
+    animation: none;
+    display: none;
+    visibility: hidden;
   }
   
 

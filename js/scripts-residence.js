@@ -33,6 +33,8 @@ document.body.addEventListener('keydown', function(event){
 }
 
 
+
+
   //LightBox
   function openLightBox() {
     document.getElementById("mylightbox").style.display = "block";

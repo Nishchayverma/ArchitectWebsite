@@ -1,22 +1,18 @@
-    //Scroll Animation
-    AOS.init({
-        disable: function () {
-          if (window.innerWidth < 768)
-            return true;
-          else
-            return false;
-        }
-      });
-      $(window).resize(function () {  
-        AOS.init({
-          disable: function () {
-            if (window.innerWidth < 768)
-              return true;
-            else
-              return false;
-          }
-        });
-      });
+
+    AOS.init();
+    if(window.innerWidth < 768){
+      console.log("working");
+      var x= document.getElementsByClassName('removeAos');
+      for(var i=0;i<x.length;i++)
+        x[i].removeAttribute("data-aos");
+    }
+    $(window).resize(function(){
+      if(window.innerWidth < 768){
+        var x= document.getElementsByClassName('removeAos');
+        for(var i=0;i<x.length;i++)
+          x[i].removeAttribute("data-aos");
+      }
+    })
 
       document.querySelectorAll('img')
     .forEach((img) =>

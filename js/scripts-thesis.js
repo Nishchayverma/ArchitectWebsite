@@ -18,6 +18,23 @@ document.body.addEventListener('keydown', function(event){
     }
 }); 
 }
+
+// document.addEventListener('DOMContentLoaded',setInterval(moveMouse(),4000));
+
+// function moveMouse(){
+//   document.moveMouse( function(e){
+//     document.getElementsByClassName('scrolldown')[0].style.animationName = "scroll-down";
+//   });
+ 
+// }
+// $(document).ready(function(){
+//   $(document).setInterval(() => {
+//     document.moveMouse( function(e){
+//           document.getElementsByClassName('scrolldown')[0].style.animationName = "scroll-down";
+//          });
+//   }, 4000);
+// });
+
 //Back to top
 window.addEventListener('scroll',function(){
   var scroll =document.querySelector('.back-to-top');
