@@ -176,10 +176,6 @@ figure{
     font-size: 60px;
     line-height: 1.1;
     color: white;
-    font-size: 16px;
-    text-shadow: 2px 1px 1px black;
-    opacity: 0;
-    animation-duration:  4s;
   }
   .carousel-text  p{
     line-height: 0.5;
