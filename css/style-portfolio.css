@@ -6,77 +6,134 @@ body,html{
   }
 /* navbar */
 
-.navbar:hover{  
-background-color: rgb(0,0,0,0.7)!important;
-}
+
 .navbar{
+  background-color: white!important;
   z-index: 1;
-  background-color: rgb(0,0,0,0.0)!important;
-  transition-property: background;
-  transition-duration: 0.6s;
-  transition-timing-function: cubic-bezier(0.04, 0.4, 0.58, 1);
   box-shadow: rgb(190, 190, 190) 0px 3px 3px 0px;
+  transition: 0.5s;
+}
+.navbar:hover{
+  background-color: rgb(0,0,0,0.8)!important;
 }
 
 .navbar-toggler{
   background-color: rgb(0,0,0,0.8)!important;
 }
- .material-icons{
+.navbar .material-icons{
   color: #C0C0C0;
 }
-.navbar-nav .nav-link{
-  padding-right:  20px!important;
-  text-shadow: 1px 1px 1px black;
+
+.nav-link{
+  position: relative;
+  padding: 5px 10px!important;
+  margin: 0 15px;
   font-size: 16px;
   color: white!important;
+  text-shadow: 1px 1px 1px black;
+  transition: 0.5s;
 }
-.navbar-nav .nav-link:hover{
-  animation: border-display 0.5s forwards ease-out;
-  border-bottom: 2px solid 	#C0C0C0;
-  width: 0%;
+.nav-link:before{
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left:11px;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #fc0;
+  border-width: 0 0 2px 2px;
+  transition: 0.5s;
+  opacity: 0;
 }
-@keyframes border-display{
-  to{
-    width: 100%;
-    border-bottom: 2px solid 	#C0C0C0;
+.nav-link:after{
+  content: '';
+  position: absolute;
+  top:11px;
+  right: 10px;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #fc0;
+  border-width: 2px 2px 0px 0px;
+  transition: 0.5s;
+  opacity: 0;
+}
+@media not all and (pointer: coarse) {
+  .nav-link:hover{
+    color: #fc0!important;
+  }
+  .nav-link:hover:before{
+    bottom: 0px;
+    left: 0px;
+    opacity: 1;
+  }
+  .nav-link:hover:after{
+    top: 0px;
+    right: 0px;
+    opacity: 1;
   }
 }
-.nav-item.active .nav-link{
-  
-  width: 100%;
-  color: 	#A9A9A9!important;
-  text-shadow: 1px 1px 1px black;
 
+
+/* Active Nav Link */
+.nav-item.active .nav-link{
+  color: #fc0!important;
+}
+
+.nav-item.active .nav-link:after{
+  content: '';
+  position: absolute;
+  top:0px;
+  right: 0px;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #fc0;
+  border-width: 2px 2px 0px 0px;
+  transition: 0.5s;
+  opacity: 1;
+}
+.nav-item.active .nav-link:before{
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left:0px;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #fc0;
+  border-width: 0 0 2px 2px;
+  transition: 0.5s;
+  opacity: 1;
 }
 
  .part-one{
   position: absolute;
+  bottom: 0;
+  right: 0;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   z-index: 99;
   animation: 
-  closing-screen-one 0.7s 0.2s forwards ease-in-out ;
+  closing-screen-one 0.5s 0.1s forwards ease-in-out ;
   background-color:  #1a1a00;
 }
  .part-two{
   position: absolute;
-  width: 100%;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
   height: 100vh;
   z-index: 100;
   animation: 
-  closing-screen-one 0.7s forwards ease-in-out ;
-  background-color:  #d9d900;
+  closing-screen-one 0.5s forwards ease-in-out ;
+  background-color: #fc0;
 }
 @keyframes closing-screen-one{
  0%{
-   transform: translateX(0%);
+   width: 100vw;
  }
  100%{
-   transform: translateX(200%);
-   visibility: hidden;
+  width: 0%;
  }
 }
-
 
 
 
@@ -99,33 +156,39 @@ background-color: rgb(0,0,0,0.7)!important;
 }
 
 .project{
-    overflow: hidden;
+  overflow: hidden;
   position: relative;
   border-radius: 15px;
   width: 90%;
+  margin-left: 25px;
   margin-bottom: 30px;
-  box-shadow: 1px 1px 10px 0px yellow;
 }
 
-[data-aos="projectsMove"]{
-  transform: translateX(100%) scale(0.5);
+[data-aos="projectsMove1"]{
+  transform: translateX(230%) scale(0.5);
 }
-[data-aos="projectsMove"].aos-animate{
+[data-aos="projectsMove1"].aos-animate{
+  transform: translateX(0) scale(1);
+}
+[data-aos="projectsMove2"]{
+  transform: translateX(130%) scale(0.54);
+}
+[data-aos="projectsMove2"].aos-animate{
+  transform: translateX(0) scale(1);
+}
+[data-aos="projectsMove3"]{
+  transform: translateX(30%)   scale(0.58);
+}
+[data-aos="projectsMove3"].aos-animate{
   transform: translateX(0) scale(1);
 }
 
 /* Image-animation */
 
-
 .project-image{
   width: 100%;
   height: auto;
-  filter:blur(0px);
-  transition: filter 0.5s ease-in;
-}
-
-.hover-animation:hover .project-image{
-  filter: blur(2px);
+  filter: blur(0px);
   transition: filter 0.7s ease-in;
 }
 
@@ -155,22 +218,28 @@ background-color: rgb(0,0,0,0.7)!important;
 }
 /* made another class hover-animation instead of using .project-image:hover cause animation was 
 disrupting during hovering over .project-text */
-.hover-animation:hover .hero-text-open{
-  opacity: 1;
-  transition: opacity 0.3s 0.5s ease-in;
+@media not all and (pointer: coarse) {
+  .hover-animation:hover .project-image{
+    filter: blur(2px);
+  }
+  .hover-animation:hover .hero-text-open{
+    opacity: 1;
+    transition: opacity 0.3s 0.5s ease-in;
+  }
+  .hover-animation:hover .hero-text-project{
+    opacity: 1;
+    transition: opacity 0.3s 0.5s ease-in;
+  }
+  .hover-animation:hover  .line{
+    width: 100%;
+    transition: width 1s;
+  }
+  .hover-animation:hover  .line-thick{
+    width: 10%;
+    transition: width 1s;
+  }
 }
-.hover-animation:hover .hero-text-project{
-  opacity: 1;
-  transition: opacity 0.3s 0.5s ease-in;
-}
-.hover-animation:hover  .line{
-  width: 100%;
-  transition: width 1s;
-}
-.hover-animation:hover  .line-thick{
-  width: 10%;
-  transition: width 1s;
-}
+
 
 /* Project-short-description */
 .project-text{
@@ -181,6 +250,7 @@ disrupting during hovering over .project-text */
   width: 100%;
   box-shadow: 0px -2px 6px 0px #282828; 
 }
+
 .project-text p:nth-child(1){
   text-transform: uppercase;
   font-size: 30px;
@@ -197,10 +267,12 @@ disrupting during hovering over .project-text */
 
 
 @media only screen and (max-width:1000px) and (min-width:767px){ 
-    .navbar-nav .nav-link{
-      padding-right:  10px!important;
-      font-size: 14px;
-    }
+
+  .nav-link{
+    margin: 0 10px;
+    font-size: 14px;
+  }
+
     .hero-text-project{
       top: 62%;
     }
@@ -214,46 +286,14 @@ disrupting during hovering over .project-text */
 
 @media only screen and (max-width:768px){
 
-  .navbar{
-    box-shadow: none;
-  }
-    .navbar-nav .nav-link{
-      padding-left: 15px;
-      padding-top: 5px;
-      font-size: 14px;
-    }
-    button.navbar-toggler{
-        margin-left: 10px!important;
-    }
+ 
 
-    @keyframes border-display{
-       to{
-         width: 15%;
-         border-bottom: 2px solid 	#C0C0C0;
-       } 
-      }
-    
-      .opening-text{
-      font-size: 80px;
-      }
-      @keyframes text-fly{
-        0%{
-          opacity: 1;
-          transform: translate(-50%,-50%);
-        }
-        50%{
-          opacity: 0.2;
-          font-size: 75px;
-          transform: translate(-50%,-200%);
-        }
-        100%{
-          opacity: 0;
-          font-size: 70px;
-          transform: translate(-50%,-300%);
-        }
-      }
-    
-      .project-heading{
+  .nav-link{
+    margin: 0px;
+    width: 80px;
+  }
+  
+   .project-heading{
         font-size: 70px;
         letter-spacing: 7px;
       }
@@ -267,40 +307,14 @@ disrupting during hovering over .project-text */
 
 }   
 
-@media only screen and (max-width: 536px){
+@media only screen and (max-width: 576px){
 
-  
-    .nav-link{
-        padding: 0px;
-      }
-      .navbar-nav .nav-link{
-        padding-left: 7px;
-        padding-top: 4px;
-        font-size: 14px;
-      }
+
       button.navbar-toggler{
         margin-left: 0px!important;
         }  
 
-      .opening-text{
-        font-size: 60px;
-      }
-      @keyframes text-fly{
-        0%{
-          opacity: 1;
-          transform: translate(-50%,-50%);
-        }
-        50%{
-          opacity: 0.5;
-          font-size: 53px;
-          transform: translate(-50%,-250%);
-        }
-        100%{
-          opacity: 0;
-          font-size: 45px;
-          transform: translate(-50%,-500%);
-        }
-      }
+   
       .project-text{
         padding: 10px 0px 0px 20px;
       }
@@ -313,7 +327,7 @@ disrupting during hovering over .project-text */
         .project-heading{
           font-size: 45px;
           letter-spacing: 3px;
-          margin-top: -110px;
+          margin-top: -60px;
         }
         .positioning{
           margin-top: 120px;
@@ -323,35 +337,25 @@ disrupting during hovering over .project-text */
         }
 }
 @media only screen and (max-width: 412px){
-  .opening-text{
-    font-size: 50px;
-  }
-  @keyframes text-fly{
-    0%{
-      opacity: 1;
-      transform: translate(-50%,-50%);
-    }
-    50%{
-      opacity: 0.5;
-      font-size: 45px;
-      transform: translate(-50%,-300%);
-    }
-    100%{
-      opacity: 0;
-      font-size: 40px;
-      transform: translate(-50%,-500%);
-    }
-  }
+
+
   .project-text{
-    padding: 5px 0px 0px 10px;
+    padding: 7px 0px 0px 10px;
   }
   .project-heading{
     font-size: 35px;
     letter-spacing: 3px;
-    margin-top: -70px;
+    margin-top: -50px;
   }
+  .project-text p:nth-child(1){
+    line-height: 0.3;
+  }
+  .project-text p{
+    margin-bottom: 0.8rem;
+  }
+
   .positioning{
-    margin-top: 90px;
+    margin-top: 110px;
   }
   .project{
     width: 70%;

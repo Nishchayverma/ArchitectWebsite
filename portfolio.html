@@ -19,11 +19,10 @@
 
 <body>
 
+  <div class="part-one"></div>
+  <div class="part-two"></div>
   <!-- Navbar -->
   <header>
-
-      <div class="part-one"> </div>
-      <div class="part-two"></div>
 
     <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav">
@@ -49,19 +48,20 @@
   </header>
   <!-- Projects -->
   <section>
-    <div class="container-fluid fixed text-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
+    <div class="container-fluid fixed text-center" data-aos="fade-left" data-aos-duration="1300" data-aos-delay="200">
       <p class="project-heading">Portfolio</p>
 
     </div>
     <div class="positioning">
-      <div class="container-fluid">
+      <div class="container-fluid ">
         <div class="row">
           <div class="col-12 col-md-4 ">
-            <div data-aos="projectsMove" data-aos-duration="1000" class="project" data-aos-delay="300" >
+            <div data-aos="projectsMove1" data-aos-duration="1000" class="project">
               <div class="hover-animation">
                 <a href="thesis.html">
-                  <img src="images/thesis/high-quality/thesis-thumbnail.jpg" class="project-image">
-                  <div  class="project-text">
+                  <img src="images/thesis/thesis-thumbnail.jpg" class="project-image">
+
+                  <div class="project-text">
                     <p>Thesis</p>
                     <p>Dehradun, Uttarakhand</p>
                     <p>2018-2019</p>
@@ -70,18 +70,17 @@
                   <hr class="line">
                   <hr class="line-thick">
                   <p class="hero-text-project">Project</p>
+
                 </a>
               </div>
-
             </div>
           </div>
-
           <div class="col-12 col-md-4">
-            <div data-aos="projectsMove" data-aos-duration="1000" class="project" data-aos-delay="500">
+            <div data-aos="projectsMove2" data-aos-duration="1000" class="project" >
               <div class="hover-animation">
                 <a href="internship.html">
-                  <img src="images/internship/intern-thumbnail.jpg" class="project-image">
-                  <div  class="project-text">
+                  <img src="images/internship/internship-thumbnail.jpg" class="project-image">
+                  <div class="project-text">
                     <p>internship</p>
                     <p>Dehradun, Uttarakhand</p>
                     <p>2018-2019</p>
@@ -92,15 +91,14 @@
                   <p class="hero-text-project">Project</p>
                 </a>
               </div>
-
             </div>
           </div>
           <div class="col-12 col-md-4">
-            <div data-aos="projectsMove" data-aos-duration="1000" class="project" data-aos-delay="700">
+            <div data-aos="projectsMove3" data-aos-duration="1000" class="project" >
               <div class="hover-animation">
                 <a href="residence.html">
                   <img src="images/residence/residence-thumbnail.jpg" class="project-image">
-                  <div  class="project-text">
+                  <div class="project-text">
                     <p>residence</p>
                     <p>Dehradun, Uttarakhand</p>
                     <p>2017-2019</p>
@@ -111,25 +109,50 @@
                   <p class="hero-text-project">Project</p>
                 </a>
               </div>
-
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
-  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
   <script>
+    if(window.innerWidth > 768){
+     document.getElementsByClassName('project')[0].setAttribute('data-aos-delay','100');
+     document.getElementsByClassName('project')[1].setAttribute('data-aos-delay','300');
+     document.getElementsByClassName('project')[2].setAttribute('data-aos-delay','500');
+    }
+    $(window).resize(function(){
+      if(window.innerWidth > 768){
+      document.getElementsByClassName('project')[0].setAttribute('data-aos-delay','100');
+      document.getElementsByClassName('project')[1].setAttribute('data-aos-delay','300');
+      document.getElementsByClassName('project')[2].setAttribute('data-aos-delay','500');
+      }
+    });
+    // To close navbar on outside click
+    $(document).ready(function () {
+      $(document).click(
+          function (event) {
+              var target = $(event.target);
+              var _mobileMenuOpen = $(".navbar-collapse").hasClass("show");
+              if (_mobileMenuOpen === true && !target.hasClass("navbar-toggler")) {
+                  $("button.navbar-toggler").click();
+              }
+          }
+      );
+  })
     
   </script>
- 
+
 </body>
 
 </html>

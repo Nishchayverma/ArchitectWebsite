@@ -32,7 +32,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="portfolio.html">Portfolio</a>
           </li>
           <li class="nav-item">
@@ -109,10 +109,11 @@
           <p>2017-2019</p>
         </div>
         <a href="#content-section">
-          <div class="scrolldown">
-            <p>Scroll to explore</p>
-          </div>
+         
+            <p class="scrolldown">Scroll to explore</p>
+        
         </a>
+      </div>
       </div>
   </section>
   <!-- Residence content -->
@@ -141,19 +142,19 @@
         </div>
 
         <div class="col-6 removed-padding">
-          <img src="images/residence/low-quality/carousel-one.jpg" width="750" height="500" onclick="openModal1()"
+          <img src="images/residence/high-quality/carousel-one.jpg" width="750" height="500" onclick="openModal1()"
             alt="Residence" class=" mt-4 content-images">
         </div>
         <div class="col-6 removed-padding">
-          <img src="images/residence/low-quality/carousel-two.jpg" width="750" height="500" onclick="openModal2()"
+          <img src="images/residence/high-quality/carousel-two.jpg" width="750" height="500" onclick="openModal2()"
             alt="Residence" class=" mt-4 content-images">
         </div>
         <div class="col-6 removed-padding">
-          <img src="images/residence/low-quality/carousel-three.jpg" width="750" height="500" onclick="openModal3()"
+          <img src="images/residence/high-quality/carousel-three.jpg" width="750" height="500" onclick="openModal3()"
             alt="Residence" class=" mb-4 mt-4 content-images">
         </div>
         <div class="col-6 removed-padding">
-          <img src="images/residence/low-quality/carousel-four.jpg" width="750" height="500" onclick="openModal4()"
+          <img src="images/residence/high-quality/carousel-four.jpg" width="750" height="500" onclick="openModal4()"
             alt="Residence" class=" mb-4 mt-4 content-images">
         </div>
 
@@ -310,28 +311,28 @@
         </div>
 
         <div class="col-4 col-md-3 mb-1 removed-more-padding">
-          <img data-src="images/residence/low-quality/carousel-one.jpg" width="750" height="500" alt="camera-image"
-            class="lazyload content-images" onclick="openLightBox();currentSlide(1)">
+          <img src="images/residence/high-quality/carousel-one.jpg" width="750" height="500" alt="camera-image"
+            class=" content-images" onclick="openLightBox();currentSlide(1)">
         </div>
         <div class="col-4 col-md-3 mb-1 removed-more-padding">
-          <img data-src="images/residence/low-quality/carousel-two.jpg" width="750" height="500" alt="camera-image"
-            class="lazyload content-images" onclick="openLightBox();currentSlide(2)">
+          <img src="images/residence/high-quality/carousel-two.jpg" width="750" height="500" alt="camera-image"
+            class=" content-images" onclick="openLightBox();currentSlide(2)">
         </div>
         <div class="col-4 col-md-3 mb-1 removed-more-padding ">
-          <img data-src="images/residence/low-quality/carousel-three.jpg" width="750" height="500" alt="camera-image"
-            class="lazyload content-images" onclick="openLightBox();currentSlide(3)">
+          <img src="images/residence/high-quality/carousel-three.jpg" width="750" height="500" alt="camera-image"
+            class=" content-images" onclick="openLightBox();currentSlide(3)">
         </div>
         <div class="col-4 col-md-3 mb-1 removed-more-padding">
-          <img data-src="images/residence/low-quality/carousel-four.jpg" width="750" height="500" alt="camera-image"
-            class="lazyload content-images" onclick="openLightBox();currentSlide(4)">
+          <img src="images/residence/high-quality/carousel-four.jpg" width="750" height="500" alt="camera-image"
+            class=" content-images" onclick="openLightBox();currentSlide(4)">
         </div>
         <div class="col-4 col-md-3 mb-1 removed-more-padding">
-          <img data-src="images/residence/low-quality/carousel-five.jpg" width="750" height="500" alt="camera-image"
-            class="lazyload content-images" onclick="openLightBox();currentSlide(5)">
+          <img src="images/residence/high-quality/carousel-five.jpg" width="750" height="500" alt="camera-image"
+            class=" content-images" onclick="openLightBox();currentSlide(5)">
         </div>
         <div class="col-4 col-md-3 mb-1 removed-more-padding">
-          <img data-src="images/residence/low-quality/carousel-six.jpg" width="750" height="500" alt="camera-image"
-            class="lazyload content-images" onclick="openLightBox();currentSlide(6)">
+          <img src="images/residence/high-quality/carousel-six.jpg" width="750" height="500" alt="camera-image"
+            class=" content-images" onclick="openLightBox();currentSlide(6)">
         </div>
         <div class="col-4 col-md-3 mb-1 removed-more-padding">
           <img data-src="images/residence/low-quality/gallery-one.jpg" width="750" height="500" alt="camera-image"
@@ -529,9 +530,9 @@
       <div class="mySlides">
         <img id="light-image28" width="2880" height="1620" alt="electrical-plan" style="width:100%;height:auto">
       </div>
-
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</span></a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+ 
+      <i onclick="plusSlides(-1)" class=" prev material-icons">&#xe5cb;</i>
+      <i onclick="plusSlides(+1)" class=" next material-icons" >&#xe5cc;</i>
 
     </div>
   </div>

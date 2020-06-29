@@ -8,32 +8,7 @@
 
 // thesis
 
-document.addEventListener('DOMContentLoaded',backKey);
-function backKey(){
-document.body.addEventListener('keydown', function(event){
-  console.log(event.which);
-  if(event.which== 27){
-    console.log("working");
-    window.history.back();
-    }
-}); 
-}
 
-// document.addEventListener('DOMContentLoaded',setInterval(moveMouse(),4000));
-
-// function moveMouse(){
-//   document.moveMouse( function(e){
-//     document.getElementsByClassName('scrolldown')[0].style.animationName = "scroll-down";
-//   });
- 
-// }
-// $(document).ready(function(){
-//   $(document).setInterval(() => {
-//     document.moveMouse( function(e){
-//           document.getElementsByClassName('scrolldown')[0].style.animationName = "scroll-down";
-//          });
-//   }, 4000);
-// });
 
 //Back to top
 window.addEventListener('scroll',function(){
@@ -49,6 +24,25 @@ function scrollToTop() {
     behavior: 'smooth',
   })
 }
+
+// TO remove scroll down on scrolling down
+window.addEventListener('scroll',function(){
+  if(window.scrollY > 500)
+  document.getElementsByClassName('scrolldown')[0].remove();
+})
+
+// To close navbar on outside click
+$(document).ready(function () {
+  $(document).click(
+      function (event) {
+          var target = $(event.target);
+          var _mobileMenuOpen = $(".navbar-collapse").hasClass("show");
+          if (_mobileMenuOpen === true && !target.hasClass("navbar-toggler")) {
+              $("button.navbar-toggler").click();
+          }
+      }
+  );
+})
 
   //LightBox
   function openLightBox() {
@@ -79,16 +73,15 @@ function scrollToTop() {
     document.getElementById("light-image24").src="images/thesis/high-quality/zone-three-four.jpg";
     document.getElementById("light-image25").src="images/thesis/high-quality/zone-three-three.jpg";
     document.getElementById("light-image26").src="images/thesis/high-quality/zone-three-two.jpg";
-    
-    document.body.addEventListener("keydown", function(event){
-      if(event.which== 27)
-      closeLightBox();
-      else if(event.which== 39)
-      plusSlides(1);
-      else if(event.which== 37)
-      plusSlides(-1);
-       });
   }
+  document.body.addEventListener("keydown", function(event){
+    if(event.which== 27)
+    closeLightBox();
+    else if(event.which== 39)
+    plusSlides(+1);
+    else if(event.which== 37)
+    plusSlides(-1);
+     });
   function closeLightBox() {
     document.getElementById("mylightbox").style.display = "none";
   }
@@ -111,8 +104,6 @@ function scrollToTop() {
     }
     slides[slideIndex - 1].style.display = "block";
   }
-
-
 
   //Modals
   function openModal1(){

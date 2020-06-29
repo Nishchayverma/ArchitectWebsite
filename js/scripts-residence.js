@@ -30,7 +30,25 @@ document.body.addEventListener('keydown', function(event){
       top:0,
       behavior: 'smooth',
     })
-}
+} 
+
+// TO remove scroll down on scrolling down
+window.addEventListener('scroll',function(){
+  if(window.scrollY > 500)
+  document.getElementsByClassName('scrolldown')[0].remove();
+})
+// To close navbar on outside click
+$(document).ready(function () {
+  $(document).click(
+      function (event) {
+          var target = $(event.target);
+          var _mobileMenuOpen = $(".navbar-collapse").hasClass("show");
+          if (_mobileMenuOpen === true && !target.hasClass("navbar-toggler")) {
+              $("button.navbar-toggler").click();
+          }
+      }
+  );
+})
 
 
 
@@ -67,16 +85,16 @@ document.body.addEventListener('keydown', function(event){
     document.getElementById("light-image27").src="images/residence/high-quality/plan-electrical-two.jpg";
     document.getElementById("light-image28").src="images/residence/high-quality/plan-electrical-one.jpg";
 
-    document.body.addEventListener("keydown", function(event){
-     if(event.which== 27)
-     closeLightBox();
-     else if(event.which== 39)
-     plusSlides(1);
-     else if(event.which== 37)
-     plusSlides(-1);
-      });
+  
   }
-
+  document.body.addEventListener("keydown", function(event){
+    if(event.which== 27)
+    closeLightBox();
+    else if(event.which== 39)
+    plusSlides(+1);
+    else if(event.which== 37)
+    plusSlides(-1);
+     });
   function closeLightBox() {
     document.getElementById("mylightbox").style.display = "none";
   }
