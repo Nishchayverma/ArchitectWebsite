@@ -1,175 +1,137 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Kartik</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- Google icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- css -->
+  <link rel="stylesheet" href="css/style-intern.css">
+  <!-- Animation  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body >
-<header>
-<nav class="navbar navbar-inverse bg-light navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
+
+<body>
+ 
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav">
+        <i class="material-icons">menu</i>
       </button>
-    </div>
-    <div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav ml-auto navbar-nav">
-          <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="thesis.html">Thesis</a></li>
-          <li><a href="freelance.html">Free Lance</a></li>
-          <li><a href="internship.html">Internship</a></li>
+      <div class="collapse navbar-collapse" id="mainnav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Connect</a>
+          </li>
         </ul>
       </div>
+    </nav>
+  </header>
+  <section>
+    <div class="position-relative">
+      <div class="fixed">
+        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5600"
+          data-pause="false">
+
+          <ul class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+          </ul>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <figure>
+                <img class="thesis-image" src="images/residence/high-quality/carousel-one.jpg" width="2880" height="1620" alt="carousel-image"
+                  data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure>
+                <img class="thesis-image" src="images/residence/high-quality/carousel-two.jpg" width="2880" height="1620" alt="carousel-image"
+                  data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure>
+                <img class="thesis-image" src="images/residence/high-quality/carousel-three.jpg" width="2880" height="1620"
+                  alt="carousel-image" data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure>
+                <img class="thesis-image" src="images/residence/high-quality/carousel-four.jpg" width="2880" height="1620"
+                  alt="carousel-image" data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure>
+                <img class="thesis-image" src="images/residence/high-quality/carousel-five.jpg" width="2880" height="1620"
+                  alt="carousel-image" data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure>
+                <img class="thesis-image" src="images/residence/high-quality/carousel-six.jpg" width="2880" height="1620"
+                  alt="Carousel-image" data-aos="darkness" data-aos-anchor=".content" data-aos-duration="1000">
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-text">
+          <h1>Residence</h1>
+          <p>Dehradun, Uttarakhand</p>
+          <p>2017-2019</p>
+        </div>
+      </div>
     </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="back-to-top" onclick="scrollToTop();" data-toggle="tooltip" 
+  data-placement="top" title="Back to top">
+    <i class="material-icons">keyboard_arrow_up</i>
+    <i class="material-icons">keyboard_arrow_up</i>
+    <i class="material-icons">keyboard_arrow_up</i>
   </div>
-</nav>    
-</header>
-<section id="home ">
-  <div class="hero-image "></div>
-    <!-- <h1 class="hero-text">Kartik Verma</h1>  -->
-    <svg id="logo" width="980" height="107" viewBox="0 0 980 107" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M57.432 103.512L16.104 57.72V103.512H3V3.144H16.104V49.656L57.576 3.144H74.136L28.632 53.4L74.568 103.512H57.432Z" stroke="white" stroke-width="5"/>
-      <path d="M148.531 81.192H104.755L96.6911 103.512H82.8671L119.155 3.72H134.275L170.419 103.512H156.595L148.531 81.192ZM144.787 70.536L126.643 19.848L108.499 70.536H144.787Z" stroke="white" stroke-width="5"/>
-      <path d="M239.082 103.512L215.178 62.472H199.338V103.512H186.234V3.144H218.634C226.218 3.144 232.602 4.44 237.786 7.032C243.066 9.624 247.002 13.128 249.594 17.544C252.186 21.96 253.482 27 253.482 32.664C253.482 39.576 251.466 45.672 247.434 50.952C243.498 56.232 237.546 59.736 229.578 61.464L254.778 103.512H239.082ZM199.338 51.96H218.634C225.738 51.96 231.066 50.232 234.618 46.776C238.17 43.224 239.946 38.52 239.946 32.664C239.946 26.712 238.17 22.104 234.618 18.84C231.162 15.576 225.834 13.944 218.634 13.944H199.338V51.96Z" stroke="white" stroke-width="5"/>
-      <path d="M335.62 3.144V13.8H308.26V103.512H295.156V13.8H267.652V3.144H335.62Z" stroke="white" stroke-width="5"/>
-      <path d="M364.854 3.144V103.512H351.75V3.144H364.854Z" stroke="white" stroke-width="5"/>
-      <path d="M441.619 103.512L400.292 57.72V103.512H387.188V3.144H400.292V49.656L441.763 3.144H458.323L412.819 53.4L458.755 103.512H441.619Z" stroke="white" stroke-width="5"/>
-      <path d="M594.725 3.144L556.853 103.512H541.733L503.861 3.144H517.829L549.365 89.688L580.901 3.144H594.725Z" stroke="white" stroke-width="5"/>
-      <path d="M622.198 13.8V47.352H658.774V58.152H622.198V92.712H663.094V103.512H609.094V3H663.094V13.8H622.198Z" stroke="white" stroke-width="5"/>
-      <path d="M735.77 103.512L711.866 62.472H696.026V103.512H682.922V3.144H715.322C722.906 3.144 729.29 4.44 734.474 7.032C739.754 9.624 743.69 13.128 746.282 17.544C748.874 21.96 750.17 27 750.17 32.664C750.17 39.576 748.154 45.672 744.122 50.952C740.186 56.232 734.234 59.736 726.266 61.464L751.466 103.512H735.77ZM696.026 51.96H715.322C722.426 51.96 727.754 50.232 731.306 46.776C734.858 43.224 736.634 38.52 736.634 32.664C736.634 26.712 734.858 22.104 731.306 18.84C727.85 15.576 722.522 13.944 715.322 13.944H696.026V51.96Z" stroke="white" stroke-width="5"/>
-      <path d="M872.339 3.864V103.512H859.235V29.208L826.115 103.512H816.899L783.635 29.064V103.512H770.531V3.864H784.643L821.507 86.232L858.371 3.864H872.339Z" stroke="white" stroke-width="5"/>
-      <path d="M953.891 81.192H910.115L902.05 103.512H888.227L924.514 3.72H939.634L975.779 103.512H961.954L953.891 81.192ZM950.146 70.536L932.003 19.848L913.858 70.536H950.146Z" stroke="white" stroke-width="5"/>
-      </svg>    
-  </div>
-</section>
-<section id="projects">
-  
-</section>
-<script src="scripts.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/scripts-important.js"></script>
+  <script src="js/lazysizes.min.js" async></script>
+  <script src="js/scripts-intern.js" defer></script>
 </body>
 </html>
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
-
-<div class="contain">
-    <div id="demo" class="carousel slide " data-ride="carousel" data-interval="5000" data-pause="false">
-
-         Indicators 
-         <ol class="carousel-indicators">
-          <li data-target="#demo" data-slide-to="0" class="active"></li>
-          <li data-target="#demo" data-slide-to="1"></li>
-          <li data-target="#demo" data-slide-to="2"></li>
-        </ol>
-        
-        The slideshow 
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-              <figure>
-                 <div class="first-image"></div>
-                 </figure> 
-          </div>
-          <div class="carousel-item">
-              <figure>
-                  <div class="second-image"></div>
-                 </figure> 
-          </div>
-          <div class="carousel-item">
-              <figure>
-                  <div class="third-image"></div>
-                 </figure> 
-          </div>
-        </div>
-        
-        
-      </div>
-</div> 
- <div class="contain">
-  <div class="images">
-  
-     <div class="text-holder">
-      <div class="row text-center">
-        <div class="col-8 text-center">
-          <h1>Kartik Verma</h1>
-          <p>This project is located in the heart of the vast business district of La Défense, between the two emblematic buildings of CNIT and La Grande Arche. Unibail’s programme consists of two towers linked by a manned bridge (northern entrance on the esplanade from Courbevoie and crossing of the circular boulevard).
-    
-           The West Tower houses offices and the East Tower houses a 4 star hotel and a hotel residence. Unibail’s request insists on office trays grouped in pairs with open views and planted loggias-gardens.
-           
-           In the extension of the loggias on double height, a void on two levels with a staircase connects the reception level and the mezzanine. The position of the building is exceptional but the basement, occupied by the railway lines, determines the constructability and the very shape of the project.
-           
-           The two towers must extend beyond the polygon, formed by the possible locations of their foundations. They find their surface in height, developing in cantilever towards the esplanade. Presented as three curved leaves that appear to spring from the ground, the towers work like cons
-          </p>
-          
-        </div>
-      </div>
-    </div> 
-    <div class="background">
-    <div class="try"> 
-       <h1>Kartik Verma</h1>
-    <p>This project is located in the heart of the vast business district of La Défense, between the two emblematic buildings of CNIT and La Grande Arche. Unibail’s programme consists of two towers linked by a manned bridge (northern entrance on the esplanade from Courbevoie and crossing of the circular boulevard).
-    
-      The West Tower houses offices and the East Tower houses a 4 star hotel and a hotel residence. Unibail’s request insists on office trays grouped in pairs with open views and planted loggias-gardens.
-      
-      In the extension of the loggias on double height, a void on two levels with a staircase connects the reception level and the mezzanine. The position of the building is exceptional but the basement, occupied by the railway lines, determines the constructability and the very shape of the project.
-      
-      The two towers must extend beyond the polygon, formed by the possible locations of their foundations. They find their surface in height, developing in cantilever towards the esplanade. Presented as three curved leaves that appear to spring from the ground, the towers work like cons
-     </p>
-     <h1>Kartik Verma</h1>
-    <p>This project is located in the heart of the vast business district of La Défense, between the two emblematic buildings of CNIT and La Grande Arche. Unibail’s programme consists of two towers linked by a manned bridge (northern entrance on the esplanade from Courbevoie and crossing of the circular boulevard).
-    
-      The West Tower houses offices and the East Tower houses a 4 star hotel and a hotel residence. Unibail’s request insists on office trays grouped in pairs with open views and planted loggias-gardens.
-      
-      In the extension of the loggias on double height, a void on two levels with a staircase connects the reception level and the mezzanine. The position of the building is exceptional but the basement, occupied by the railway lines, determines the constructability and the very shape of the project.
-      
-      The two towers must extend beyond the polygon, formed by the possible locations of their foundations. They find their surface in height, developing in cantilever towards the esplanade. Presented as three curved leaves that appear to spring from the ground, the towers work like cons
-     </p>
-    </div></div>
-  </div>
-</div> 
-
-using img tag 
-<div class="contain">
-  <img class="images" src="images/1064455.png" >
-  <div class="try">
-    <h1>Kartik Verma</h1>
-    <p>This project is located in the heart of the vast business district of La Défense, between the two emblematic buildings of CNIT and La Grande Arche. Unibail’s programme consists of two towers linked by a manned bridge (northern entrance on the esplanade from Courbevoie and crossing of the circular boulevard).
-    
-      The West Tower houses offices and the East Tower houses a 4 star hotel and a hotel residence. Unibail’s request insists on office trays grouped in pairs with open views and planted loggias-gardens.
-      
-      In the extension of the loggias on double height, a void on two levels with a staircase connects the reception level and the mezzanine. The position of the building is exceptional but the basement, occupied by the railway lines, determines the constructability and the very shape of the project.
-      
-      The two towers must extend beyond the polygon, formed by the possible locations of their foundations. They find their surface in height, developing in cantilever towards the esplanade. Presented as three curved leaves that appear to spring from the ground, the towers work like cons
-     </p>
-  </div>
-</div> 
-
-
-</body>
-</html> -->

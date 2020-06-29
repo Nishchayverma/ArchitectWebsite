@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Kartik</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- Google icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- css -->
+  <link rel="stylesheet" href="css/style-residence.css">
+  <!-- Animation  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body >
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav">
+        <i class="material-icons">menu</i>
+      </button>
+      <div class="collapse navbar-collapse" id="mainnav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Connect</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Carousel -->
+  <section>
+    <div class="position-relative">
+      <div class="fixed">
+        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5600"
+          data-pause="false">
+
+          <ul class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+          </ul>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <figure>
+                <img class="thesis-image removeAos" src="images/residence/high-quality/carousel-one.jpg" width="2880"
+                  height="1620" alt="carousel-image" data-aos="darkness" data-aos-anchor=".content"
+                  data-aos-duration="1000">
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure>
+                <img class="thesis-image removeAos " src="images/residence/high-quality/carousel-two.jpg" width="2880"
+                  height="1620" alt="carousel-image" data-aos="darkness" data-aos-anchor=".content"
+                  data-aos-duration="1000">
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure>
+                <img class="thesis-image removeAos" src="images/residence/high-quality/carousel-three.jpg" width="2880"
+                  height="1620" alt="carousel-image" data-aos="darkness" data-aos-anchor=".content"
+                  data-aos-duration="1000">
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure>
+                <img class="thesis-image removeAos" src="images/residence/high-quality/carousel-four.jpg" width="2880"
+                  height="1620" alt="carousel-image" data-aos="darkness" data-aos-anchor=".content"
+                  data-aos-duration="1000">
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure>
+                <img class="thesis-image removeAos" src="images/residence/high-quality/carousel-five.jpg" width="2880"
+                  height="1620" alt="carousel-image" data-aos="darkness" data-aos-anchor=".content"
+                  data-aos-duration="1000">
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure>
+                <img class="thesis-image removeAos" src="images/residence/high-quality/carousel-six.jpg" width="2880"
+                  height="1620" alt="Carousel-image" data-aos="darkness" data-aos-anchor=".content"
+                  data-aos-duration="1000">
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-text">
+          <h1>Residence</h1>
+          <p>Dehradun, Uttarakhand</p>
+          <p>2017-2019</p>
+        </div>
+        <a href="#content-section">
+          <div class="scrolldown">
+            <p>Scroll to explore</p>
+          </div>
+        </a>
+      </div>
+  </section>
+  <!-- Residence content -->
+  <section>
+    <div class="container-fluid">
+      <div class="row content" id="content-section">
+        <div class="col-12">
+          <h1 class="content-heading"><b>Residence</b></h1>
+          <!-- For better styles sub-heading, uncomment this -->
+          <!-- <div class="row">
+              <div class="col-md-4">
+                <p id="content-subheading">Studio 219 (training)</p>
+              </div>
+              <div class="col-md-4">
+                <p id="content-subheading">Dehradun, Uttrakhand</p>
+              </div>
+            <div class="col-md-4">
+              <p id="content-subheading">2017-2019</p>
+            </div>
+            </div> -->
+          <p>Studio 219 (training)</p>
+          <p>Dehradun, Uttarakhand</p>
+          <p>2018-2019</p>
+
+          <hr class="line">
+        </div>
+
+        <div class="col-6 removed-padding">
+          <img src="images/residence/low-quality/carousel-one.jpg" width="750" height="500" onclick="openModal1()"
+            alt="Residence" class=" mt-4 content-images">
+        </div>
+        <div class="col-6 removed-padding">
+          <img src="images/residence/low-quality/carousel-two.jpg" width="750" height="500" onclick="openModal2()"
+            alt="Residence" class=" mt-4 content-images">
+        </div>
+        <div class="col-6 removed-padding">
+          <img src="images/residence/low-quality/carousel-three.jpg" width="750" height="500" onclick="openModal3()"
+            alt="Residence" class=" mb-4 mt-4 content-images">
+        </div>
+        <div class="col-6 removed-padding">
+          <img src="images/residence/low-quality/carousel-four.jpg" width="750" height="500" onclick="openModal4()"
+            alt="Residence" class=" mb-4 mt-4 content-images">
+        </div>
+
+        <div class="col-12 mb-4 text-center" data-aos="fade-up" data-aos-duration="1000">
+          <p class="zone mt-4 mb-2 "><b>Introduction</b></p>
+          <hr class="zone-line">
+        </div>
+        <div class="col-12">
+          <p>Site is located in Dehradun on
+            a hill top.
+            Client is based in chennai.
+            Site is divided into a landscape
+            garden, kitchen garden, gardner’s shed, staff quaters and a
+            bunglow.
+            Basic requirement was to get
+            an after-retirement home for
+            him and his wife. Which includes- 3 bedrooms, personal toilets for couples and for
+            each room. 1 library, family
+            room and studio room with
+            mazanine floor. </p>
+
+        </div>
+        <div class="col-md-6 mt-4 ">
+          <p>Fully stone cladded bungalow to merge with
+            the surrounding nature and glass wool for
+            insulation of building.
+            Pitched roof makes the sky line with the hills
+            at back, and location of balconies makes the
+            vista even clearer.</p>
+        </div>
+        <div class="col-md-6 ">
+          <img data-src="images/residence/low-quality/main-plan-one.jpg" width="750" height="500" onclick="openModal5()"
+            alt="Plan" class="lazyload mt-4 content-images">
+        </div>
+
+        <div class="col-6 text-center removed-padding">
+          <p style="line-height: 1;">SOUTH ELEVATION</p>
+          <img data-src="images/residence/low-quality/main-plan-two.jpg" width="750" height="500" alt="plan"
+            class="lazyload mt-2 content-images" onclick="openModal6()">
+        </div>
+        <div class="col-6 text-center removed-padding">
+          <p style="line-height: 1;">WEST ELEVATION</p>
+          <img data-src="images/residence/low-quality/main-plan-three.jpg" width="750" height="500" alt="Plan"
+            class="lazyload mt-2 content-images" onclick="openModal7()">
+        </div>
+
+        <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
+          <p class="zone mt-4 mb-2"><b>KITCHEN DETAIL</b></p>
+          <hr class="zone-line mb-4">
+        </div>
+        <div class="col-md-6 mt-2">
+          <p>Kitchen is designed with stainless steel
+            cabinet, with a morning room getting
+            sunlight from east.
+
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img data-src="images/residence/low-quality/plan-kitchen-two.jpg" width="750" height="500" alt="kitchen"
+            class="lazyload mt-2 content-images" onclick="openModal8()">
+        </div>
+        <div class="col-12">
+          <img data-src="images/residence/low-quality/plan-kitchen-one.jpg" width="750" height="500" alt="kitchen"
+            class="lazyload mt-2 mb-4 content-images" onclick="openModal9()">
+        </div>
+
+        <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
+          <p class="zone mt-4 mb-2"><b>BALCONY DETAIL</b></p>
+          <hr class="zone-line mb-4">
+        </div>
+        <div class="col-12 ">
+          <p>Two types of balcony. One with thada and a drain, other with free flow and no drain. Both are located at
+            different position
+            and serves different purposes.
+          </p>
+        </div>
+        <div class="col-6 removed-padding">
+          <img data-src="images/residence/low-quality/plan-balcony-one.jpg" width="750" height="500" alt="balcony"
+            class="lazyload mt-2 mb-4 content-images" onclick="openModal10()">
+        </div>
+        <div class="col-6 removed-padding">
+          <img data-src="images/residence/low-quality/plan-balcony-two.jpg" width="750" height="500" alt="balcony"
+            class="lazyload mt-2 mb-4 content-images" onclick="openModal11()">
+        </div>
+
+
+        <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
+          <p class="zone mt-4 mb-2"><b>STAIRCASE DETAIL</b></p>
+          <hr class="zone-line mb-4">
+        </div>
+        <div class="col-md-6 mt-2">
+          <p>A vintage staircase with heavy wooden post that
+            goes straight to roof.
+            All joints and parts are fabricated as per design.
+
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img data-src="images/residence/low-quality/plan-staircase-one.jpg" width="750" height="500" alt="Staircase"
+            class="lazyload  mb-4 content-images" onclick="openModal12()">
+        </div>
+
+        <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
+          <p class="zone mt-4 mb-2"><b>ELECTRICAL DETAIL</b></p>
+          <hr class="zone-line mb-4">
+        </div>
+        <div class="col-md-6 mt-2">
+          <p>
+            Locating the a.c. so that the drip exits into the toilets or directly outside and
+            condensers were placed on the flat roof which had solar panel installed on them.
+            Special consideration was put for steam room.
+
+          </p>
+          <img data-src="images/residence/low-quality/plan-electrical-two.jpg" width="750" height="500"
+            id="special-content-image" alt="electrical" class="lazyload content-images" onclick="openModal13()">
+        </div>
+        <div class="col-md-6">
+          <img data-src="images/residence/low-quality/plan-electrical-one.jpg" width="750" height="500" alt="electrical"
+            class="lazyload mt-2 mb-4 content-images" onclick="openModal14()">
+        </div>
+        <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
+          <p class="zone mt-4 mb-2"><b>TOILET DETAIL</b></p>
+          <hr class="zone-line mb-4">
+        </div>
+        <div class="col-md-6 mt-2">
+          <p>Toilets are divided into his, her and a
+            common at the entrance. There is also
+            a steam room provided for the couple,
+            with a future planned area for open
+            air bath.
+            Kota stone was used for the flooring
+            and ceramic tiles on walls. Fittings
+            were all from jaquar specially queen
+            range.
+
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img data-src="images/residence/low-quality/plan-toilet-one.jpg" width="750" height="500" alt="Toilet"
+            class="lazyload mt-2 content-images" onclick="openModal15()">
+        </div>
+        <div class="col-12">
+          <img data-src="images/residence/low-quality/plan-toilet-two.jpg" width="750" height="500" alt="Toilet"
+            class="lazyload mt-2 mb-4 content-images" onclick="openModal16()">
+        </div>
+
+
+
+
+        <!-- Photo Gallery -->
+        <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="1000">
+          <p class="zone mt-4 mb-2  "><b>Photo Gallery</b></p>
+          <hr class="zone-line mb-4">
+        </div>
+
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/carousel-one.jpg" width="750" height="500" alt="camera-image"
+            class="lazyload content-images" onclick="openLightBox();currentSlide(1)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/carousel-two.jpg" width="750" height="500" alt="camera-image"
+            class="lazyload content-images" onclick="openLightBox();currentSlide(2)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding ">
+          <img data-src="images/residence/low-quality/carousel-three.jpg" width="750" height="500" alt="camera-image"
+            class="lazyload content-images" onclick="openLightBox();currentSlide(3)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/carousel-four.jpg" width="750" height="500" alt="camera-image"
+            class="lazyload content-images" onclick="openLightBox();currentSlide(4)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/carousel-five.jpg" width="750" height="500" alt="camera-image"
+            class="lazyload content-images" onclick="openLightBox();currentSlide(5)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/carousel-six.jpg" width="750" height="500" alt="camera-image"
+            class="lazyload content-images" onclick="openLightBox();currentSlide(6)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/gallery-one.jpg" width="750" height="500" alt="camera-image"
+            class="lazyload content-images" onclick="openLightBox();currentSlide(7)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/gallery-two.jpg" width="750" height="500" alt="camera-image"
+            class="lazyload content-images" onclick="openLightBox();currentSlide(8)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/gallery-three.jpg" width="750" height="500" alt="camera-image"
+            class="lazyload content-images" onclick="openLightBox();currentSlide(9)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/gallery-four.jpg" width="750" height="500" alt="camera-image"
+            class="lazyload content-images" onclick="openLightBox();currentSlide(10)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/gallery-five.jpg" width="750" height="500" alt="camera-image"
+            class="lazyload content-images" onclick="openLightBox();currentSlide(11)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/gallery-six.jpg" width="750" height="500" alt="camera-image"
+            class="lazyload content-images" onclick="openLightBox();currentSlide(12)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/gallery-seven.jpg" width="750" height="500" alt="camera-image"
+            class="lazyload content-images" onclick="openLightBox();currentSlide(13)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/gallery-eight.jpg" width="750" height="500" alt="camera-image"
+            class="lazyload content-images" onclick="openLightBox();currentSlide(14)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/gallery-nine.jpg" width="750" height="500" alt="camera-image"
+            class="lazyload content-images" onclick="openLightBox();currentSlide(15)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/gallery-ten.jpg" width="750" height="500" alt="camera-image"
+            class="lazyload content-images" onclick="openLightBox();currentSlide(16)">
+        </div>
+
+
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/main-plan-one-gallery.jpg" width="750" height="500"
+            alt="main-plan" class="lazyload content-images" onclick="openLightBox();currentSlide(17)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/main-plan-two.jpg" width="750" height="500" alt="main-plan"
+            class="lazyload content-images" onclick="openLightBox();currentSlide(18)">
+        </div>
+
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/main-plan-three.jpg" width="750" height="500" alt="main-plan"
+            class="lazyload content-images" onclick="openLightBox();currentSlide(19)">
+        </div>
+
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/plan-staircase-one-gallery.jpg" width="750" height="500"
+            alt="staircase-plan" class="lazyload content-images" onclick="openLightBox();currentSlide(20)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/plan-kitchen-one.jpg" width="750" height="500"
+            class="lazyload content-images" alt="kitchen-plan" onclick="openLightBox();currentSlide(21)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/plan-kitchen-two.jpg" width="750" height="500"
+            class="lazyload content-images" alt="kitchen-plan" onclick="openLightBox();currentSlide(22)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/plan-balcony-one-gallery.jpg" width="750" height="500"
+            class="lazyload content-images" alt="balcony-plan" onclick="openLightBox();currentSlide(23)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/plan-balcony-two-gallery.jpg" width="750" height="500"
+            class="lazyload content-images" alt="balcony-plan" onclick="openLightBox();currentSlide(24)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/plan-toilet-one-gallery.jpg" width="750" height="500"
+            alt="toilet-plan" class="lazyload content-images" onclick="openLightBox();currentSlide(25)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/plan-toilet-two.jpg" width="750" height="500" alt="toilet-plan"
+            class="lazyload content-images" onclick="openLightBox();currentSlide(26)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/plan-electrical-two-gallery.jpg" width="750" height="500"
+            class="lazyload content-images" alt="electrical-plan" onclick="openLightBox();currentSlide(27)">
+        </div>
+        <div class="col-4 col-md-3 mb-1 removed-more-padding">
+          <img data-src="images/residence/low-quality/plan-electrical-one-gallery.jpg" width="750" height="500"
+            class="lazyload content-images" alt="electrical-plan" onclick="openLightBox();currentSlide(28)">
+        </div>
+        <div class="col-12 text-center  copyright ">
+          <p>Copyright&copy;Kartik Verma</p>
+          <p>All rights reserved</p>
+          <p>Credits - Studio 219 (Ar. Magali Rastogi)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+    <div class="back-to-top" onclick="scrollToTop()" data-toggle="tooltip" data-placement="top" title="Back to top">
+      <i class="material-icons">keyboard_arrow_up</i>
+      <i class="material-icons">keyboard_arrow_up</i>
+      <i class="material-icons">keyboard_arrow_up</i>
+    </div>
+  
+  <!-- lightBox -->
+  <div id="mylightbox" class="lightbox">
+    <span class="close-lightbox" onclick="closeLightBox()">&times;</span>
+    <div class="lightbox-content">
+      <div class="mySlides">
+        <img id="light-image1" width="2880" height="1620" alt="site-image" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image2" width="2880" height="1620" alt="site-image" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image3" width="2880" height="1620" alt="site-image" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image4" width="2880" height="1620" alt="site-image" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image5" width="2880" height="1620" alt="site-image" style="width:100%;height:auto">
+      </div>
+      <div class=" mySlides">
+        <img id="light-image6" width="2880" height="1620" alt="site-image" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image7" width="2880" height="1620" alt="site-image" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image8" width="2880" height="1620" alt="site-image" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image9" width="2880" height="1620" alt="site-image" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image10" width="2880" height="1620" alt="site-image" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image11" width="2880" height="1620" alt="site-image" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image12" width="2880" height="1620" alt="site-image" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image13" width="2880" height="1620" alt="site-image" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image14" width="2880" height="1620" alt="site-image" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image15" width="2880" height="1620" alt="site-image" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image16" width="2880" height="1620" alt="site-image" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image17" width="2880" height="1620" alt="main-plan" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image18" width="2880" height="1620" alt="main-plan" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image19" width="2880" height="1620" alt="main-plan" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image20" width="2880" height="1620" alt="staircase-plan" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image21" width="2880" height="1620" alt="kitchen-plan" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image22" width="2880" height="1620" alt="kitchen-plan" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image23" width="2880" height="1620" alt="balcony-plan" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image24" width="2880" height="1620" alt="balcony-plan" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image25" width="2880" height="1620" alt="toilet-plan" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image26" width="2880" height="1620" alt="toilet-plan" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image27" width="2880" height="1620" alt="electrical-plan" style="width:100%;height:auto">
+      </div>
+      <div class="mySlides">
+        <img id="light-image28" width="2880" height="1620" alt="electrical-plan" style="width:100%;height:auto">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</span></a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+  </div>
+
+  <!-- Modals -->
+  <div class="modal" id="modals1">
+    <div class="modal-dialog modal-xl modal-dialog-centered  ">
+      <div class="modal-content"">
+      <div class=" modal-body">
+        <span class="close" onclick="closeModal1()">&times;</span>
+        <img id="modal-image1" width="2880" height="1620" alt="site-image" style="width: 100%;height:auto">
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="modal" id="modals2">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <span class="close" onclick="closeModal2()">&times;</span>
+          <img id="modal-image2" width="2880" height="1620" alt="site-image" style="width: 100%;height:auto">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modals3">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <span class="close" onclick="closeModal3()">&times;</span>
+          <img id="modal-image3" width="2880" height="1620" alt="site-image" style="width: 100%;height:auto">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modals4">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <span class="close" onclick="closeModal4()">&times;</span>
+          <img id="modal-image4" width="2880" height="1620" alt="site-image" style="width: 100%;height:auto">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modals5">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <span class="close" onclick="closeModal5()">&times;</span>
+          <img id="modal-image5" width="2880" height="1620" alt="main-plan" style="width: 100%;height:auto">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modals6">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <span class="close" onclick="closeModal6()">&times;</span>
+          <img id="modal-image6" width="2880" height="1620" alt="main-plan" style="width: 100%;height:auto">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modals7">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <span class="close" onclick="closeModal7()">&times;</span>
+          <img id="modal-image7" width="2880" height="1620" alt="main-plan" style="width: 100%;height:auto">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modals8">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <span class="close" onclick="closeModal8()">&times;</span>
+          <img id="modal-image8" width="2880" height="1620" alt="balcony-plan" style="width: 100%;height:auto">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modals9">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <span class="close" onclick="closeModal9()">&times;</span>
+          <img id="modal-image9" width="2880" height="1620" alt="balcony-plan" style="width: 100%;height:auto">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modals10">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <span class="close" onclick="closeModal10()">&times;</span>
+          <img id="modal-image10" width="2880" height="1620" alt="staircase-plan" style="width: 100%;height:auto">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modals11">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <span class="close" onclick="closeModal11()">&times;</span>
+          <img id="modal-image11" width="2880" height="1620" alt="kitchen-plan" style="width: 100%;height:auto">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modals12">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <span class="close" onclick="closeModal12()">&times;</span>
+          <img id="modal-image12" width="2880" height="1620" alt="kitchen-plan" style="width: 100%;height:auto">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modals13">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <span class="close" onclick="closeModal13()">&times;</span>
+          <img id="modal-image13" width="2880" height="1620" alt="electrical-plan" style="width: 100%;height:auto">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modals14">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <span class="close" onclick="closeModal14()">&times;</span>
+          <img id="modal-image14" width="2880" height="1620" alt="electrical-plan" style="width: 100%;height:auto">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modals15">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <span class="close" onclick="closeModal15()">&times;</span>
+          <img id="modal-image15" width="2880" height="1620" alt="toilet-plan" style="width: 100%;height:auto">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modals16">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <span class="close" onclick="closeModal16()">&times;</span>
+          <img id="modal-image16" width="2880" height="1620" alt="toilet-plan" style="width: 100%;height:auto">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/scripts-important.js"></script>
+  <script src="js/lazysizes.min.js" async></script>
+  <script src="js/scripts-residence.js" defer></script>
+</body>
+
+</html>
