@@ -13,7 +13,6 @@ body,html{
 .navbar:hover{
   background-color: rgb(0,0,0,0.8)!important;
 }
-
 .navbar-toggler{
   background-color: rgb(0,0,0,0.8)!important;
 }
@@ -177,6 +176,10 @@ figure{
     font-size: 60px;
     line-height: 1.1;
     color: white;
+    font-size: 16px;
+    text-shadow: 2px 1px 1px black;
+    opacity: 0;
+    animation-duration:  4s;
   }
   .carousel-text  p{
     line-height: 0.5;
@@ -545,6 +548,7 @@ background: linear-gradient(47deg, rgba(0,0,5,1) 31%, rgba(0,0,51,1) 61%, rgba(0
     font-size: 80px;
   }
 
+
 }
 
 @media only screen and (max-width:768px){
@@ -579,7 +583,6 @@ background: linear-gradient(47deg, rgba(0,0,5,1) 31%, rgba(0,0,51,1) 61%, rgba(0
   .carousel-text{
     display: none;
   }
-
 
   .content{
     padding: 10px;
@@ -687,7 +690,6 @@ background: linear-gradient(47deg, rgba(0,0,5,1) 31%, rgba(0,0,51,1) 61%, rgba(0
     height: 8px;
     border-radius: 8px!important;
   }
-
   .content-heading{
     font-size:30px;
     line-height: 1.2;
@@ -713,6 +715,10 @@ background: linear-gradient(47deg, rgba(0,0,5,1) 31%, rgba(0,0,51,1) 61%, rgba(0
   }
   .next {
     font-size: 60px;
+  }
+  .copyright  p{
+    font-size: 10px;
+    line-height: 0.0;
   }
   .copyright  p{
     font-size: 10px;
