@@ -135,7 +135,7 @@ body,html{
  }
 }
 
-
+/* Portfolio */
 
 .fixed{
   position: fixed;
@@ -197,12 +197,12 @@ body,html{
   top:50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  border-top: 1px solid yellow;
+  border-top: 1px solid #fc0;
   background-color: white;
  width: 0%;
 }
 .hero-text-open, .hero-text-project{
-  color: yellow;
+  color: #fc0;
   position: absolute;
   top: 50%;
   left: 50%;

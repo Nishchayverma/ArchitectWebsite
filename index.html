@@ -1,60 +1,99 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Kartik</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style-index.css">
-  <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+  <!-- Google icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <!-- Animation -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
 </head>
-<body >
+
+<body>
+
   <header>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav">
-            <i class="material-icons">menu</i>
-        </button>
-        <div class="collapse navbar-collapse" id="mainnav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Connect</a>
-                </li>
-            </ul>
-        </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav">
+        <i class="material-icons">menu</i>
+      </button>
+      <div class="collapse navbar-collapse" id="mainnav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Connect</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-</header>
-<section id="home ">
-  <div class="hero-image "></div>
-    <!-- <h1 class="hero-text">Kartik Verma</h1>  -->
-    <svg id="logo" width="980" height="107" viewBox="0 0 980 107" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M57.432 103.512L16.104 57.72V103.512H3V3.144H16.104V49.656L57.576 3.144H74.136L28.632 53.4L74.568 103.512H57.432Z" stroke="white" stroke-width="5"/>
-      <path d="M148.531 81.192H104.755L96.6911 103.512H82.8671L119.155 3.72H134.275L170.419 103.512H156.595L148.531 81.192ZM144.787 70.536L126.643 19.848L108.499 70.536H144.787Z" stroke="white" stroke-width="5"/>
-      <path d="M239.082 103.512L215.178 62.472H199.338V103.512H186.234V3.144H218.634C226.218 3.144 232.602 4.44 237.786 7.032C243.066 9.624 247.002 13.128 249.594 17.544C252.186 21.96 253.482 27 253.482 32.664C253.482 39.576 251.466 45.672 247.434 50.952C243.498 56.232 237.546 59.736 229.578 61.464L254.778 103.512H239.082ZM199.338 51.96H218.634C225.738 51.96 231.066 50.232 234.618 46.776C238.17 43.224 239.946 38.52 239.946 32.664C239.946 26.712 238.17 22.104 234.618 18.84C231.162 15.576 225.834 13.944 218.634 13.944H199.338V51.96Z" stroke="white" stroke-width="5"/>
-      <path d="M335.62 3.144V13.8H308.26V103.512H295.156V13.8H267.652V3.144H335.62Z" stroke="white" stroke-width="5"/>
-      <path d="M364.854 3.144V103.512H351.75V3.144H364.854Z" stroke="white" stroke-width="5"/>
-      <path d="M441.619 103.512L400.292 57.72V103.512H387.188V3.144H400.292V49.656L441.763 3.144H458.323L412.819 53.4L458.755 103.512H441.619Z" stroke="white" stroke-width="5"/>
-      <path d="M594.725 3.144L556.853 103.512H541.733L503.861 3.144H517.829L549.365 89.688L580.901 3.144H594.725Z" stroke="white" stroke-width="5"/>
-      <path d="M622.198 13.8V47.352H658.774V58.152H622.198V92.712H663.094V103.512H609.094V3H663.094V13.8H622.198Z" stroke="white" stroke-width="5"/>
-      <path d="M735.77 103.512L711.866 62.472H696.026V103.512H682.922V3.144H715.322C722.906 3.144 729.29 4.44 734.474 7.032C739.754 9.624 743.69 13.128 746.282 17.544C748.874 21.96 750.17 27 750.17 32.664C750.17 39.576 748.154 45.672 744.122 50.952C740.186 56.232 734.234 59.736 726.266 61.464L751.466 103.512H735.77ZM696.026 51.96H715.322C722.426 51.96 727.754 50.232 731.306 46.776C734.858 43.224 736.634 38.52 736.634 32.664C736.634 26.712 734.858 22.104 731.306 18.84C727.85 15.576 722.522 13.944 715.322 13.944H696.026V51.96Z" stroke="white" stroke-width="5"/>
-      <path d="M872.339 3.864V103.512H859.235V29.208L826.115 103.512H816.899L783.635 29.064V103.512H770.531V3.864H784.643L821.507 86.232L858.371 3.864H872.339Z" stroke="white" stroke-width="5"/>
-      <path d="M953.891 81.192H910.115L902.05 103.512H888.227L924.514 3.72H939.634L975.779 103.512H961.954L953.891 81.192ZM950.146 70.536L932.003 19.848L913.858 70.536H950.146Z" stroke="white" stroke-width="5"/>
-      </svg>    
+
+  </header>
+  <div class="outer-wrapper">
+    <div class="wrapper">
+      <div class="slide-one">
+        <div class="container-fluid padding-top">
+          <div class="text-center relative">
+             -->
+            <p class="name">Kartik</p>
+            <div class="tape">
+              <svg viewBox="0 0 442 28">
+                <g id="p-tape" transform="translate(-1.359 185.409)">
+                  <path style="fill:#FADE01;" d="M5-164.2L24-177c0,0,17.5-2.8,
+           20.3-3c2.7-0.2,104.7,2.8,109.7,2.8s17.9-0.5,19.9-0.3c2.1,0.3,32.1-1.7,32.1-1.7s34.2,
+           2.9,42.6,2.4c8.4-0.4,52.3,1.2,52.3,1.2s75.3,1.3,82.2,1.4c6.9,0,29.8,0.7,31.4,0.4c1.5-0.4,
+           19.5,4.6,22.5,4.6s4,0.1,0,1.1c-4,0.9-15,0.9-18,0.9s-25.4,2-26.7,3s-6.3,0-10.8,0c-4.5,
+           0-65.5-1-70.5-1s-5,1-19,1s-82.1-0.7-86-0.4c-4,0.4-24.5,1.3-30.2,0.8c-5.8-0.4-7.8-1.4-13.8-1.4s-28.2,
+           2.5-34.6,2.3s-46.3,0.3-59.4,0s-37.5-2.1-44.7-0.7C16-162.2,5-164.2,5-164.2z">
+                  </path>
+                </g>
+              </svg>
+            </div>
+            </div>
+          
+          <div class="row">
+            <div class="col-12 text-center">
+              <img class="avatar-image" alt="My Pic" src="images/try.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="slide-two">
+
+      </div>
+      <div class="slide-three">
+
+      </div>
+    </div>
   </div>
-</section>
-<section id="projects">
-  
-</section>
-<script src="js/scripts.js"></script>
+
+  <section>
+
+   
+  </section>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="js/scripts-index.js"></script>
 </body>
+
 </html>

@@ -694,7 +694,7 @@ background: linear-gradient(47deg, rgba(0,0,5,1) 31%, rgba(0,0,51,1) 61%, rgba(0
     font-size: 13px;
     line-height: 0.3;
   } */
-  #text-content-change{
+  .text-content-change{
     font-size: 10px;
   }
   #zone-inner-text{
