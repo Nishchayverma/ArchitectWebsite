@@ -50,34 +50,34 @@ $(document).ready(function () {
   //LightBox
   function openLightBox() {
     document.getElementById("mylightbox").style.display = "block";
-    document.getElementById("light-image1").src="images/residence/high-quality/carousel-one.jpg";
-    document.getElementById("light-image2").src="images/residence/high-quality/carousel-two.jpg";
-    document.getElementById("light-image3").src="images/residence/high-quality/carousel-three.jpg";
-    document.getElementById("light-image4").src="images/residence/high-quality/carousel-four.jpg";
-    document.getElementById("light-image5").src="images/residence/high-quality/carousel-five.jpg";
-    document.getElementById("light-image6").src="images/residence/high-quality/carousel-six.jpg";
-    document.getElementById("light-image7").src="images/residence/high-quality/gallery-one.jpg";
-    document.getElementById("light-image8").src="images/residence/high-quality/gallery-two.jpg";
-    document.getElementById("light-image9").src="images/residence/high-quality/gallery-three.jpg";
-    document.getElementById("light-image10").src="images/residence/high-quality/gallery-four.jpg";
-    document.getElementById("light-image11").src="images/residence/high-quality/gallery-five.jpg";
-    document.getElementById("light-image12").src="images/residence/high-quality/gallery-six.jpg";
-    document.getElementById("light-image13").src="images/residence/high-quality/gallery-seven.jpg";
-    document.getElementById("light-image14").src="images/residence/high-quality/gallery-eight.jpg";
-    document.getElementById("light-image15").src="images/residence/high-quality/gallery-nine.jpg";
-    document.getElementById("light-image16").src="images/residence/high-quality/gallery-ten.jpg";
-    document.getElementById("light-image17").src="images/residence/high-quality/main-plan-one.jpg";
-    document.getElementById("light-image18").src="images/residence/high-quality/main-plan-two.jpg";
-    document.getElementById("light-image19").src="images/residence/high-quality/main-plan-three.jpg";
-    document.getElementById("light-image20").src="images/residence/high-quality/plan-staircase-one.jpg";
-    document.getElementById("light-image21").src="images/residence/high-quality/plan-kitchen-one.jpg";
-    document.getElementById("light-image22").src="images/residence/high-quality/plan-kitchen-two.jpg";
-    document.getElementById("light-image23").src="images/residence/high-quality/plan-balcony-one.jpg";
-    document.getElementById("light-image24").src="images/residence/high-quality/plan-balcony-two.jpg";
-    document.getElementById("light-image25").src="images/residence/high-quality/plan-toilet-one.jpg";
-    document.getElementById("light-image26").src="images/residence/high-quality/plan-toilet-two.jpg";
-    document.getElementById("light-image27").src="images/residence/high-quality/plan-electrical-two.jpg";
-    document.getElementById("light-image28").src="images/residence/high-quality/plan-electrical-one.jpg";
+    document.getElementById("light-image1").src="images/residence/high-quality/carousel-one.webp";
+    document.getElementById("light-image2").src="images/residence/high-quality/carousel-two.webp";
+    document.getElementById("light-image3").src="images/residence/high-quality/carousel-three.webp";
+    document.getElementById("light-image4").src="images/residence/high-quality/carousel-four.webp";
+    document.getElementById("light-image5").src="images/residence/high-quality/carousel-five.webp";
+    document.getElementById("light-image6").src="images/residence/high-quality/carousel-six.webp";
+    document.getElementById("light-image7").src="images/residence/high-quality/gallery-one.webp";
+    document.getElementById("light-image8").src="images/residence/high-quality/gallery-two.webp";
+    document.getElementById("light-image9").src="images/residence/high-quality/gallery-three.webp";
+    document.getElementById("light-image10").src="images/residence/high-quality/gallery-four.webp";
+    document.getElementById("light-image11").src="images/residence/high-quality/gallery-five.webp";
+    document.getElementById("light-image12").src="images/residence/high-quality/gallery-six.webp";
+    document.getElementById("light-image13").src="images/residence/high-quality/gallery-seven.webp";
+    document.getElementById("light-image14").src="images/residence/high-quality/gallery-eight.webp";
+    document.getElementById("light-image15").src="images/residence/high-quality/gallery-nine.webp";
+    document.getElementById("light-image16").src="images/residence/high-quality/gallery-ten.webp";
+    document.getElementById("light-image17").src="images/residence/high-quality/main-plan-one.webp";
+    document.getElementById("light-image18").src="images/residence/high-quality/main-plan-two.webp";
+    document.getElementById("light-image19").src="images/residence/high-quality/main-plan-three.webp";
+    document.getElementById("light-image20").src="images/residence/high-quality/plan-staircase-one.webp";
+    document.getElementById("light-image21").src="images/residence/high-quality/plan-kitchen-one.webp";
+    document.getElementById("light-image22").src="images/residence/high-quality/plan-kitchen-two.webp";
+    document.getElementById("light-image23").src="images/residence/high-quality/plan-balcony-one.webp";
+    document.getElementById("light-image24").src="images/residence/high-quality/plan-balcony-two.webp";
+    document.getElementById("light-image25").src="images/residence/high-quality/plan-toilet-one.webp";
+    document.getElementById("light-image26").src="images/residence/high-quality/plan-toilet-two.webp";
+    document.getElementById("light-image27").src="images/residence/high-quality/plan-electrical-two.webp";
+    document.getElementById("light-image28").src="images/residence/high-quality/plan-electrical-one.webp";
 
   
   }
@@ -116,7 +116,7 @@ $(document).ready(function () {
 
   //Modals
   function openModal1(){
-    document.getElementById("modal-image1").src="images/residence/high-quality/carousel-one.jpg";
+    document.getElementById("modal-image1").src="images/residence/high-quality/carousel-one.webp";
     $("#modals1").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
@@ -127,7 +127,7 @@ $(document).ready(function () {
     $("#modals1").modal("hide");
   }
   function openModal2(){
-    document.getElementById("modal-image2").src="images/residence/high-quality/carousel-two.jpg";
+    document.getElementById("modal-image2").src="images/residence/high-quality/carousel-two.webp";
     $("#modals2").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
@@ -139,7 +139,7 @@ $(document).ready(function () {
     $("#modals2").modal("hide");
   }
   function openModal3(){
-    document.getElementById("modal-image3").src="images/residence/high-quality/carousel-three.jpg";
+    document.getElementById("modal-image3").src="images/residence/high-quality/carousel-three.webp";
     $("#modals3").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
@@ -151,7 +151,7 @@ $(document).ready(function () {
     $("#modals3").modal("hide");
   }
   function openModal4(){
-    document.getElementById("modal-image4").src="images/residence/high-quality/carousel-four.jpg";
+    document.getElementById("modal-image4").src="images/residence/high-quality/carousel-four.webp";
     $("#modals4").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
@@ -162,7 +162,7 @@ $(document).ready(function () {
     $("#modals4").modal("hide");
   }
   function openModal5(){
-    document.getElementById("modal-image5").src="images/residence/high-quality/main-plan-one.jpg";
+    document.getElementById("modal-image5").src="images/residence/high-quality/main-plan-one.webp";
     $("#modals5").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
@@ -173,7 +173,7 @@ $(document).ready(function () {
     $("#modals5").modal("hide");
   }
   function openModal6(){
-    document.getElementById("modal-image6").src="images/residence/high-quality/main-plan-two.jpg";
+    document.getElementById("modal-image6").src="images/residence/high-quality/main-plan-two.webp";
     $("#modals6").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
@@ -184,7 +184,7 @@ $(document).ready(function () {
     $("#modals6").modal("hide");
   }
   function openModal7(){
-    document.getElementById("modal-image7").src="images/residence/high-quality/main-plan-three.jpg";
+    document.getElementById("modal-image7").src="images/residence/high-quality/main-plan-three.webp";
     $("#modals7").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
@@ -195,7 +195,7 @@ $(document).ready(function () {
     $("#modals7").modal("hide");
   }
   function openModal8(){
-    document.getElementById("modal-image8").src="images/residence/high-quality/plan-kitchen-two.jpg";
+    document.getElementById("modal-image8").src="images/residence/high-quality/plan-kitchen-two.webp";
     $("#modals8").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
@@ -206,7 +206,7 @@ $(document).ready(function () {
     $("#modals8").modal("hide");
   }
   function openModal9(){
-    document.getElementById("modal-image9").src="images/residence/high-quality/plan-kitchen-one.jpg";
+    document.getElementById("modal-image9").src="images/residence/high-quality/plan-kitchen-one.webp";
     $("#modals9").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
@@ -217,7 +217,7 @@ $(document).ready(function () {
     $("#modals9").modal("hide");
   }
   function openModal10(){
-    document.getElementById("modal-image10").src="images/residence/high-quality/plan-balcony-one.jpg";
+    document.getElementById("modal-image10").src="images/residence/high-quality/plan-balcony-one.webp";
     $("#modals10").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
@@ -228,7 +228,7 @@ $(document).ready(function () {
     $("#modals10").modal("hide");
   }
   function openModal11(){
-    document.getElementById("modal-image11").src="images/residence/high-quality/plan-balcony-two.jpg";
+    document.getElementById("modal-image11").src="images/residence/high-quality/plan-balcony-two.webp";
     $("#modals11").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
@@ -239,7 +239,7 @@ $(document).ready(function () {
     $("#modals11").modal("hide");
   }
   function openModal12(){
-    document.getElementById("modal-image12").src="images/residence/high-quality/plan-staircase-one.jpg";
+    document.getElementById("modal-image12").src="images/residence/high-quality/plan-staircase-one.webp";
     $("#modals12").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
@@ -250,7 +250,7 @@ $(document).ready(function () {
     $("#modals12").modal("hide");
   }
   function openModal13(){
-    document.getElementById("modal-image13").src="images/residence/high-quality/plan-electrical-two.jpg";
+    document.getElementById("modal-image13").src="images/residence/high-quality/plan-electrical-two.webp";
     $("#modals13").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
@@ -261,7 +261,7 @@ $(document).ready(function () {
     $("#modals13").modal("hide");
   }
   function openModal14(){
-    document.getElementById("modal-image14").src="images/residence/high-quality/plan-electrical-one.jpg";
+    document.getElementById("modal-image14").src="images/residence/high-quality/plan-electrical-one.webp";
     $("#modals14").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
@@ -272,7 +272,7 @@ $(document).ready(function () {
     $("#modals14").modal("hide");
   }
   function openModal15(){
-    document.getElementById("modal-image15").src="images/residence/high-quality/plan-toilet-one.jpg";
+    document.getElementById("modal-image15").src="images/residence/high-quality/plan-toilet-one.webp";
     $("#modals15").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
@@ -283,7 +283,7 @@ $(document).ready(function () {
     $("#modals15").modal("hide");
   }
   function openModal16(){
-    document.getElementById("modal-image16").src="images/residence/high-quality/plan-toilet-two.jpg";
+    document.getElementById("modal-image16").src="images/residence/high-quality/plan-toilet-two.webp";
     $("#modals16").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)

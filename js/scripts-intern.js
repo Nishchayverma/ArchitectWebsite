@@ -53,21 +53,21 @@ $(document).ready(function () {
   //LightBox
   function openLightBox() {
     document.getElementById("mylightbox").style.display = "block";
-    document.getElementById("light-image1").src="images/internship/high-quality/carousel-one-gallery.jpg";
-    document.getElementById("light-image2").src="images/internship/high-quality/carousel-two-gallery.jpg";
-    document.getElementById("light-image3").src="images/internship/high-quality/carousel-three-gallery.jpg";
-    document.getElementById("light-image4").src="images/internship/high-quality/carousel-four.jpg";
-    document.getElementById("light-image5").src="images/internship/high-quality/carousel-five.jpg";
-    document.getElementById("light-image6").src="images/internship/high-quality/carousel-six.jpg";
-    document.getElementById("light-image7").src="images/internship/high-quality/project-one-one.jpg";
-    document.getElementById("light-image8").src="images/internship/high-quality/project-one-two.jpg";
-    document.getElementById("light-image9").src="images/internship/high-quality/project-two.jpg";
-    document.getElementById("light-image10").src="images/internship/high-quality/project-three-one.jpg";
-    document.getElementById("light-image11").src="images/internship/high-quality/project-three-two.jpg";
-    document.getElementById("light-image12").src="images/internship/high-quality/project-four-one.jpg";
-    document.getElementById("light-image13").src="images/internship/high-quality/project-four-two.jpg";
-    document.getElementById("light-image14").src="images/internship/high-quality/project-five-one.jpg";
-    document.getElementById("light-image15").src="images/internship/high-quality/project-five-two.jpg";
+    document.getElementById("light-image1").src="images/internship/high-quality/carousel-one-gallery.webp";
+    document.getElementById("light-image2").src="images/internship/high-quality/carousel-two-gallery.webp";
+    document.getElementById("light-image3").src="images/internship/high-quality/carousel-three-gallery.webp";
+    document.getElementById("light-image4").src="images/internship/high-quality/carousel-four.webp";
+    document.getElementById("light-image5").src="images/internship/high-quality/carousel-five.webp";
+    document.getElementById("light-image6").src="images/internship/high-quality/carousel-six.webp";
+    document.getElementById("light-image7").src="images/internship/high-quality/project-one-one.webp";
+    document.getElementById("light-image8").src="images/internship/high-quality/project-one-two.webp";
+    document.getElementById("light-image9").src="images/internship/high-quality/project-two.webp";
+    document.getElementById("light-image10").src="images/internship/high-quality/project-three-one.webp";
+    document.getElementById("light-image11").src="images/internship/high-quality/project-three-two.webp";
+    document.getElementById("light-image12").src="images/internship/high-quality/project-four-one.webp";
+    document.getElementById("light-image13").src="images/internship/high-quality/project-four-two.webp";
+    document.getElementById("light-image14").src="images/internship/high-quality/project-five-one.webp";
+    document.getElementById("light-image15").src="images/internship/high-quality/project-five-two.webp";
   
   }
   document.body.addEventListener("keydown", function(event){
@@ -106,7 +106,7 @@ $(document).ready(function () {
 
   //Modals
   function openModal1(){
-    document.getElementById("modal-image1").src="images/internship/high-quality/project-one-one.jpg";
+    document.getElementById("modal-image1").src="images/internship/high-quality/project-one-one.webp";
     $("#modals1").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
@@ -117,7 +117,7 @@ $(document).ready(function () {
     $("#modals1").modal("hide");
   }
   function openModal2(){
-    document.getElementById("modal-image2").src="images/internship/high-quality/project-one-two.jpg";
+    document.getElementById("modal-image2").src="images/internship/high-quality/project-one-two.webp";
     $("#modals2").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
@@ -129,7 +129,7 @@ $(document).ready(function () {
     $("#modals2").modal("hide");
   }
   function openModal3(){
-    document.getElementById("modal-image3").src="images/internship/high-quality/project-two.jpg";
+    document.getElementById("modal-image3").src="images/internship/high-quality/project-two.webp";
     $("#modals3").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
@@ -141,7 +141,7 @@ $(document).ready(function () {
     $("#modals3").modal("hide");
   }
   function openModal4(){
-    document.getElementById("modal-image4").src="images/internship/high-quality/project-three-one.jpg";
+    document.getElementById("modal-image4").src="images/internship/high-quality/project-three-one.webp";
     $("#modals4").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
@@ -152,7 +152,7 @@ $(document).ready(function () {
     $("#modals4").modal("hide");
   }
   function openModal5(){
-    document.getElementById("modal-image5").src="images/internship/high-quality/project-three-two.jpg";
+    document.getElementById("modal-image5").src="images/internship/high-quality/project-three-two.webp";
     $("#modals5").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
@@ -163,7 +163,7 @@ $(document).ready(function () {
     $("#modals5").modal("hide");
   }
   function openModal6(){
-    document.getElementById("modal-image6").src="images/internship/high-quality/project-four-one.jpg";
+    document.getElementById("modal-image6").src="images/internship/high-quality/project-four-one.webp";
     $("#modals6").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
@@ -174,7 +174,7 @@ $(document).ready(function () {
     $("#modals6").modal("hide");
   }
   function openModal7(){
-    document.getElementById("modal-image7").src="images/internship/high-quality/project-four-two.jpg";
+    document.getElementById("modal-image7").src="images/internship/high-quality/project-four-two.webp";
     $("#modals7").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
@@ -185,7 +185,7 @@ $(document).ready(function () {
     $("#modals7").modal("hide");
   }
   function openModal8(){
-    document.getElementById("modal-image8").src="images/internship/high-quality/project-five-one.jpg";
+    document.getElementById("modal-image8").src="images/internship/high-quality/project-five-one.webp";
     $("#modals8").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
@@ -196,7 +196,7 @@ $(document).ready(function () {
     $("#modals8").modal("hide");
   }
   function openModal9(){
-    document.getElementById("modal-image9").src="images/internship/high-quality/project-five-two.jpg";
+    document.getElementById("modal-image9").src="images/internship/high-quality/project-five-two.webp";
     $("#modals9").modal();
     document.body.addEventListener('keydown',function(event){
       if(event.which == 27)
