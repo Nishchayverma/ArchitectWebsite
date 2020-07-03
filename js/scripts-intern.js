@@ -55,19 +55,18 @@ $(document).ready(function () {
     document.getElementById("mylightbox").style.display = "block";
     document.getElementById("light-image1").src="images/internship/high-quality/carousel-one-gallery.webp";
     document.getElementById("light-image2").src="images/internship/high-quality/carousel-two-gallery.webp";
-    document.getElementById("light-image3").src="images/internship/high-quality/carousel-three-gallery.webp";
-    document.getElementById("light-image4").src="images/internship/high-quality/carousel-four.webp";
-    document.getElementById("light-image5").src="images/internship/high-quality/carousel-five.webp";
-    document.getElementById("light-image6").src="images/internship/high-quality/carousel-six.webp";
-    document.getElementById("light-image7").src="images/internship/high-quality/project-one-one.webp";
-    document.getElementById("light-image8").src="images/internship/high-quality/project-one-two.webp";
-    document.getElementById("light-image9").src="images/internship/high-quality/project-two.webp";
-    document.getElementById("light-image10").src="images/internship/high-quality/project-three-one.webp";
-    document.getElementById("light-image11").src="images/internship/high-quality/project-three-two.webp";
-    document.getElementById("light-image12").src="images/internship/high-quality/project-four-one.webp";
-    document.getElementById("light-image13").src="images/internship/high-quality/project-four-two.webp";
-    document.getElementById("light-image14").src="images/internship/high-quality/project-five-one.webp";
-    document.getElementById("light-image15").src="images/internship/high-quality/project-five-two.webp";
+    document.getElementById("light-image3").src="images/internship/high-quality/carousel-four.webp";
+    document.getElementById("light-image4").src="images/internship/high-quality/carousel-five.webp";
+    document.getElementById("light-image5").src="images/internship/high-quality/carousel-six.webp";
+    document.getElementById("light-image6").src="images/internship/high-quality/project-one-one.webp";
+    document.getElementById("light-image7").src="images/internship/high-quality/project-one-two.webp";
+    document.getElementById("light-image8").src="images/internship/high-quality/project-two.webp";
+    document.getElementById("light-image9").src="images/internship/high-quality/project-three-one.webp";
+    document.getElementById("light-image10").src="images/internship/high-quality/project-three-two.webp";
+    document.getElementById("light-image11").src="images/internship/high-quality/project-four-one.webp";
+    document.getElementById("light-image12").src="images/internship/high-quality/project-four-two.webp";
+    document.getElementById("light-image13").src="images/internship/high-quality/project-five-one.webp";
+    document.getElementById("light-image14").src="images/internship/high-quality/project-five-two.webp";
   
   }
   document.body.addEventListener("keydown", function(event){
