@@ -1,17 +1,4 @@
 
-
-// residence
-document.addEventListener('DOMContentLoaded',backKey);
-function backKey(){
-document.body.addEventListener('keydown', function(event){
-  console.log("working");
-  if(event.which== 27){
-  console.log("working");
-  window.history.back();
-  }
-
-}); 
-}
   //Back to top
   window.addEventListener('scroll',function(){
     var scroll =document.querySelector('.back-to-top');
@@ -26,6 +13,7 @@ document.body.addEventListener('keydown', function(event){
       behavior: 'smooth',
     })
 } 
+
 
 // TO remove scroll down on scrolling down
 window.addEventListener('scroll',function(){

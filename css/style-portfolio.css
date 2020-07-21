@@ -3,9 +3,10 @@ body,html{
     padding: 0px;
     overflow-x: hidden;
    background-color: 	white;
+   position: relative;
+   height: 100vh;
   }
 /* navbar */
-
 
 .navbar{
   background-color: white!important;
@@ -108,8 +109,8 @@ body,html{
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   z-index: 99;
   animation: 
   closing-screen-one 0.5s 0.1s forwards ease-in-out ;
@@ -119,8 +120,8 @@ body,html{
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: 100;
   animation: 
   closing-screen-one 0.5s forwards ease-in-out ;
@@ -128,7 +129,7 @@ body,html{
 }
 @keyframes closing-screen-one{
  0%{
-   width: 100vw;
+   width: 100%;
  }
  100%{
   width: 0%;
@@ -139,7 +140,6 @@ body,html{
 
 .fixed{
   position: fixed;
-
 }
 .project-heading{
   text-transform: uppercase;
@@ -286,7 +286,9 @@ disrupting during hovering over .project-text */
 @media only screen and (max-width:768px){
 
  
-
+  body,html{
+    height: auto;
+  }
   .nav-link{
     margin: 0px;
     width: 80px;
