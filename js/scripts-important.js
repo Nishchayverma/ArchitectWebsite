@@ -12,7 +12,7 @@
           x[i].removeAttribute("data-aos");
       }
     })
-
+// AOS WITH LAZYLoading optimized
       document.querySelectorAll('img')
     .forEach((img) =>
         img.addEventListener('load', () =>
