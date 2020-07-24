@@ -69,6 +69,7 @@ $(document).ready(function () {
   function closeLightBox() {
     document.getElementById("mylightbox").style.display = "none";
   }
+
   var slideIndex = 1;
   showSlides(slideIndex);
 
@@ -88,7 +89,15 @@ $(document).ready(function () {
     }
     slides[slideIndex - 1].style.display = "block";
   }
- 
+  function openFullScreen(){
+    var elem = document.getElementsByClassName('lightbox-content')[0];
+    if(document.webkitFullscreenElement) {
+      document.webkitCancelFullScreen();
+    }
+    else {
+      elem.webkitRequestFullScreen();
+    };
+  }
 
 
   //Modals

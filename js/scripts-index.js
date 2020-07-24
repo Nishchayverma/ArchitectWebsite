@@ -1,4 +1,6 @@
 
+
+
 // To close navbar on outside click
 $(document).ready(function () {
     $(document).click(
@@ -26,18 +28,45 @@ for(var i=0;i<spans.length;i++){
     spans[i].style.animationDelay = i*70+"ms";
 }
 
-// PROJECT IMAGE TILT
 
-$(document).ready(function(){
-    if(window.innerWidth > 660){
-        $('.js-project').tilt({
-            perspective: 700,
-            scale: 1.05,
-            speed:  500,
-        })
+
+// SECTION TEXT DISPLAY
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (rect.top <= 600 );
+}
+function isInViewportPort(element){
+    const rect = element.getBoundingClientRect();
+    return (rect.top <= 250 );
+}
+
+var about= document.getElementById('about');
+var portfolio = document.getElementById('portfolio');
+var sectionText= document.getElementsByClassName('section-text')[0];
+
+window.addEventListener('scroll',function(){
+
+   
+    if(isInViewport(about)){
+        sectionText.style.opacity= "0";
     }
-    
+    else{
+        if(isInViewportPort(portfolio))
+        sectionText.style.opacity= "1";
+        else
+        sectionText.style.opacity="0";
+    }
 })
+
+
+// PROJECT IMAGE TILT
+if(window.innerWidth > 660){
+VanillaTilt.init(document.querySelectorAll(".js-project"), {
+    perspective: 700,
+    scale: 1.05,
+    speed:  500,
+});
+}
 
 // PORTFOLIO PROJECT BACKGROUND
 var projectTextRight=document.getElementsByClassName("project-text-right");
@@ -132,15 +161,10 @@ function removeBackground(){
    
 }
 
+// GMAIL LINK
+if(window.innerWidth > 768)
+    document.getElementById('gmail-link').href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=kartik.verma1996@gmail.com";
+    else
+    document.getElementById('gmail-link').href="mailto:kartik.verma1996@gmail.com";
 
 
-// ABOUT MOVE TEXT
-$(document).on('scroll', function(){
-    console.log(window.scrollY);
-    $('.about-heading').css("left", Math.max(3000 - 1.25 * window.scrollY, 50) + "px" );
-})
-
-$(document).on('scroll', function(){
-    console.log(window.scrollY);
-    $('.connect-heading').css("left", Math.max(4000 - 1.25 * window.scrollY, 50) + "px" );
-})

@@ -18,7 +18,7 @@ transition: background-color 0.75s cubic-bezier(.25,.1,.25,1);
 }
 
 .navbar:hover{
-background-color: rgb(0,0,0,0.8)!important;
+background-color: rgb(0,0,0,0.6)!important;
 }
 
 .navbar-toggler{
@@ -244,6 +244,7 @@ transform: translateY(100%);
 
   /* Portfolio */
 
+ 
 
 .section-text{
   font-family: 'Playfair Display', serif;
@@ -255,19 +256,12 @@ transform: translateY(100%);
   left: 50%;
   top: 50%;
   color:rgb(250,250,250);
+  transform: translate(-50%,-50%);
   background-attachment: fixed;
   opacity: 0;
+  transition: opacity 0.2s;
 }
 
-[data-aos="text-open"]{
-opacity: 0;
-transform: translate(-50%,0%);
-  transition-property: opacity, transform;
-}
-[data-aos="text-open"].aos-animate{
-  transform: translate(-50%,-50%);
- opacity: 1;
-}
 
 .fixed-background{
   overflow: hidden;
@@ -387,39 +381,39 @@ top: 25%;
  .about-heading{
   text-transform: uppercase;
    position: absolute;
-   left: 100px;
-   top:20px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
    font-size: 150px;
-   letter-spacing: 20px;
-   font-weight: 500;
+   letter-spacing: 10px;
    font-family: 'Playfair Display', serif;
-   color: #F0F0F0;
+   color: 	#E8E8E8;
  }
-
-
  .about-content-text{
+   width: 50%;
    position: absolute;
-   top: 30%;
-   font-weight: 300;
-   margin-right: 50px;
-   font-size: 30px;
+   left: 10%;
+  top: 5%;
+   font-size: 25px;
    color: #3d3d3d;
  }
 
  .about-content-text .big-text{
-  font-size: 70px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 3px;
+  font-size: 72px;
   font-weight: 700;
   color: #fc0;
  }
- [data-aos="custom-try"]{
-  opacity: 0;
-  transform: translateY(100%);
-    transition-property: opacity, transform;
-  }
-  [data-aos="custom-try"].aos-animate{
-    transform: translateY(0%);
-   opacity: 1;
-  }
+
+ .about-content-experience{
+  width: 50%;
+  position: absolute;
+  right: 5%;
+ bottom: 9%;
+  font-size: 25px;
+  color: #3d3d3d;
+ }
 
 
 
@@ -428,14 +422,72 @@ top: 25%;
 
  .connect-heading{
    text-transform: uppercase;
-  position: relative;
-  left: 100px;
-  top:20px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   font-size: 150px;
-  letter-spacing: 10px;
-  font-weight: 500;
+  letter-spacing: 5px;
   font-family: 'Playfair Display', serif;
   color: rgb(250,250,250);
+}
+.connect-header{
+  width: 40%;
+   position: absolute;
+   left: 10%;
+  top: 10%;
+   font-size: 42px;
+   color:#383838;
+}
+.connect-header span{
+  font-size: 53px;
+}
+.connect-header a{
+  position: relative;
+  color:#383838;
+  transition: 0.3s ;
+  text-decoration: none;
+}
+.connect-header a:after,.connect-footer a:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left:0;
+  background-color:#fc0;
+  width: 100%;
+  height: 4px;
+}
+
+.connect-header a:hover,.connect-footer a:hover{
+  text-decoration: none;
+  color: #808080;
+}
+.connect-footer {
+  width: 40%;
+   position: absolute;
+   bottom: 10%;
+   right: 5%;
+   font-size: 42px;
+   color:#383838;
+}
+.connect-footer a{
+  position: relative;
+  color:#383838;
+  transition: 0.3s ;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+
+.copyright{
+  position: absolute;
+  color: #484848;
+  bottom: 9px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-size: 11px;
 }
 
 /* RESPONSIVE DESIGN */
