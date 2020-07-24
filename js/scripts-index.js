@@ -1,4 +1,6 @@
-
+// window.addEventListener("load",function(){
+//     fade out loader
+// })
 
 
 // To close navbar on outside click
