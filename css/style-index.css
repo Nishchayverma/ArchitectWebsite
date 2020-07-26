@@ -369,7 +369,7 @@ top: 25%;
    color: 	#BEBEBE;
   font-family: 'Roboto Mono', monospace;
  }
- .project-text-left #arrow,.project-text-right #arrow{
+ .project-text-left .arrow,.project-text-right .arrow{
    font-size: 20px;
  }
 
@@ -720,7 +720,7 @@ top: 25%;
           border-top: 2px solid #fc0;
           width: 120%;
         }
-        .project-text-left #arrow,.project-text-right #arrow{
+        .project-text-left .arrow,.project-text-right .arrow{
           font-size: 20px;
         }
    }
