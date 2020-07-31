@@ -1,16 +1,5 @@
-// window.addEventListener("load",function(){
-//    console.log("working");
-//    $('html, body').css({ 'overflow': 'hidden' 
-//                       })
-//   setTimeout(function() {
-//     $('html, body').css({ 'overflow': 'auto' })
-//   }, 2100);
-//  document.getElementsByClassName('loading')[0].style.animationName="loading-fade"; 
-// })
-$('html, body').css({ 'overflow-Y': 'hidden' })
-setTimeout(function() {
-$('html, body').css({ 'overflow-Y': 'auto' })
-}, 2100);
+
+
 // To close navbar on outside click
 $(document).ready(function () {
     $(document).click(
@@ -32,11 +21,6 @@ window.addEventListener('scroll', function () {
 })
 
 
-// Quote Animation
-var spans = document.getElementById('quote').getElementsByTagName("span");
-for (var i = 0; i < spans.length; i++) {
-    spans[i].style.animationDelay = i * 70 + "ms";
-}
 
 
 
