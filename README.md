@@ -1,4 +1,4 @@
-<p align="center"> <h1>Kartik Verma</h1></p>
+# Kartik Verma
 
 ## Loading
 
@@ -10,7 +10,7 @@
 
 ## Projects
 
-<p align="center>
+<p align="center">
 <img src="/images/readme-images/projects-page.png" alt="projects-page" width="49%">
 <img src="/images/readme-images/project-display.png" alt="project-display" width="49%">
  <br>
