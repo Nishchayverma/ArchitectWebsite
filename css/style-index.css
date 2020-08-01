@@ -548,7 +548,9 @@ top: 40%;
 
  /* ABOUT */
 
-
+#about{
+  background-color:#F8F8F8;height:120vh;
+}
  .about-heading{
   text-transform: uppercase;
    position: absolute;
@@ -565,7 +567,7 @@ top: 40%;
    position: absolute;
    left: 10%;
   top: 5%;
-   font-size: 25px;
+   font-size: 28px;
    color: #3d3d3d;
  }
 
@@ -578,11 +580,11 @@ top: 40%;
  }
 
  .about-content-experience{
-  width: 40%;
+  width: 50%;
   position: absolute;
-  right: 5%;
- bottom: 9%;
-  font-size: 25px;
+  right: 10%;
+ bottom: 5%;
+  font-size: 28px;
   color: #3d3d3d;
  }
 
@@ -607,7 +609,7 @@ top: 40%;
    position: absolute;
    left: 10%;
   top: 10%;
-   font-size: 42px;
+   font-size: 40px;
    color:#383838;
 }
 .connect-header span{
@@ -638,8 +640,8 @@ top: 40%;
   width: 40%;
    position: absolute;
    bottom: 10%;
-   right: 5%;
-   font-size: 42px;
+   right: 1%;
+   font-size: 40px;
    color:#383838;
 }
 .connect-footer a{
@@ -694,6 +696,18 @@ top: 40%;
        #logo-loading{
         width: 350px;
       }
+ 
+       .about-content-text{
+         font-size: 25px;
+       }
+       .about-content-text .big-text{
+        font-size: 65px;
+       }
+       .about-content-experience{
+        font-size: 25px;
+       }
+      
+      
       
   }
 
@@ -764,7 +778,47 @@ top: 40%;
         width: 350px;
         top: 20%;
        }
-      
+       .about-heading{
+         font-size: 120px;
+         letter-spacing:7px;
+       }
+       .about-content-text{
+        font-size: 23px;
+        width: 60%;
+      }
+      .about-content-text .big-text{
+       font-size: 60px;
+      }
+      .about-content-experience{
+       font-size: 23px;
+       width: 60%;
+      }
+      .connect-heading{
+       font-size: 130px;
+       letter-spacing: 4px;
+     }
+      .connect-header{
+        width: 50%;
+         position: absolute;
+         left: 5%;
+        top: 10%;
+         font-size: 35px;
+         color:#383838;
+      }
+      .connect-header span{
+        font-size: 50px;
+      }
+      .connect-footer {
+        width: 40%;
+         position: absolute;
+         bottom: 10%;
+         right: 5%;
+         font-size: 35px;
+         color:#383838;
+      }
+      .connect-footer a{
+        font-size: 25px;
+      }
    }
 
    @media only screen and (max-width: 768px){
@@ -834,6 +888,52 @@ top: 40%;
       width: 350px;
       top: 30%;
      }
+     #about{
+       height: 100vh;
+     }
+     .about-heading{
+      font-size: 100px;
+      letter-spacing:5px;
+    }
+     .about-content-text{
+       left: 5%;
+      font-size: 20px;
+      width: 70%;
+    }
+    .about-content-text .big-text{
+     font-size: 60px;
+    }
+    .about-content-experience{
+      right: 5%;
+     font-size: 20px;
+     width: 70%;
+    }
+    .connect-heading{
+      font-size: 100px;
+      letter-spacing: 3px;
+    }
+    .connect-header{
+      width: 60%;
+       position: absolute;
+       left: 5%;
+      top: 10%;
+       font-size: 30px;
+       color:#383838;
+    }
+    .connect-header span{
+      font-size: 40px;
+    }
+    .connect-footer {
+      width: 60%;
+       position: absolute;
+       bottom: 10%;
+       right: 1%;
+       font-size: 30px;
+       color:#383838;
+    }
+    .connect-footer a{
+      font-size: 25px;
+    }
  }
 
    @media only screen and (max-width: 660px){
@@ -985,6 +1085,61 @@ top: 40%;
         .project-text-left .arrow,.project-text-right .arrow{
           font-size: 20px;
         }
+        .about-heading{
+          font-size: 100px;
+          letter-spacing:3px;
+        }
+        .about-content-text{
+          left: 50%;
+          transform: translate(-50%);
+         font-size: 18px;
+         width: 80%;
+       }
+       .about-content-text .big-text{
+        font-size: 55px;
+       }
+       .about-content-experience{
+         right: 50%;
+         transform: translate(50%);
+        font-size: 18px;
+        width: 80%;
+       }
+       .connect-heading{
+        font-size: 80px;
+        letter-spacing: 3px;
+      }
+       .connect-header{
+        width: 60%;
+         position: absolute;
+         left: 5%;
+        top: 10%;
+         font-size: 25px;
+         color:#383838;
+      }
+      .connect-header span{
+        font-size: 35px;
+      }
+      .connect-footer {
+        width: 60%;
+         position: absolute;
+         bottom: 10%;
+         right: 1%;
+         font-size: 25px;
+         color:#383838;
+      }
+      .connect-footer a{
+        font-size: 20px;
+      }
+      .copyright{
+        position: absolute;
+        color: #484848;
+        bottom: 9px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-transform: uppercase;
+        font-size: 9px;
+      }
+      
    }
   
    @media only screen and (max-width: 464px){
@@ -1023,9 +1178,35 @@ top: 40%;
      .project-text-left p:nth-child(1),.project-text-right  p:nth-child(1){
       line-height: 0.6;
      font-size: 25px;
+    } 
+    .about-heading{
+      top:55%;
+      font-size: 90px;
+      letter-spacing:3px;
     }
-  
-
+    .about-content-text{
+     top: 7%;
+    }
+    .about-content-experience{
+     bottom: 7%;
+     }
+     .connect-heading{
+      font-size: 70px;
+      letter-spacing: 3px;
+    }
+  .connect-header{
+    width: 70%;
+  }
+  .connect-footer{
+    width: 70%;
+  }
+  .connect-footer a{
+    font-size: 17px;
+  }
+  .copyright{
+    width: 60%;
+    font-size: 9px;
+  }
    }
 
    @media only screen and (max-width: 402px){
@@ -1058,6 +1239,21 @@ top: 40%;
     font-size: 60px;
     letter-spacing: 0px;
   }
+  .about-content-text{
+    left: 50%;
+    transform: translate(-50%);
+   font-size: 17px;
+   width: 80%;
+ }
+ .about-content-text .big-text{
+  font-size: 50px;
+ }
+ .about-content-experience{
+   right: 50%;
+   transform: translate(50%);
+  font-size: 17px;
+  width: 80%;
+ }
   .project-image-one{
     left: 50%;
     transform: translateX(-50%);
