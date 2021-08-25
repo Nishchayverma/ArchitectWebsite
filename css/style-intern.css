@@ -1,7 +1,6 @@
 body,html{
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 /* navbar */
@@ -143,22 +142,22 @@ figure{
 overflow: hidden;
 }
 .thesis-image{
-width: 100%;
+width: 100vw;
 max-height: 100vh;
 height: auto;
 animation: image-load-thesis 4.6s 1s forwards linear;
 }
 @keyframes image-load-thesis{
 0%{
-  width: 100%;
+  width: 100vw;
   transform: scale(1);
 }
 50%{
-  width: 100%;
+  width: 100vw;
   transform: scale(1.05);
 }
 100%{
-  width: 100%;
+  width: 100vw;
   transform: scale(1.1);
 }
 }
